@@ -1,54 +1,27 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { ChevronDown, Search, X } from "lucide-react";
-
-const navItems = [
-  { name: "Nosotros", href: "#nosotros" },
-  {
-    name: "Servicios",
-    href: "#",
-    subItems: [
-      { name: "Electronics", href: "/products/electronics" },
-      { name: "Clothing", href: "/products/clothing" },
-      {
-        name: "Home",
-        href: "#",
-        subItems: [
-          { name: "Furniture", href: "/products/home-garden/furniture" },
-          { name: "Decor", href: "/products/home-garden/decor" },
-        ],
-      },
-      {
-        name: "Home & Garden",
-        href: "/products/home-garden",
-        subItems: [
-          { name: "Furniture", href: "/products/home-garden/furniture" },
-          { name: "Decor", href: "/products/home-garden/decor" },
-        ],
-      },
-    ],
-  },
-  { name: "Outsourcing Contable", href: "#outsourcing-contable" },
-  { name: "Desarrollo Web", href: "#desarrollo-web" },
-];
+import { ChevronDown, X } from "lucide-react";
+import { navItems } from "./Navbar.data";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdowns, setOpenDropdowns] = useState<string[]>([]);
-  const [isSearchOpen] = useState(false);
   const [activeItem, setActiveItem] = useState("");
 
   useEffect(() => {
     setActiveItem(window.location.pathname);
   }, []);
 
-  const toggleDropdown = (name: string) => {
-    setOpenDropdowns((prev) =>
-      prev.includes(name)
-        ? prev.filter((item) => item !== name)
-        : [...prev, name]
-    );
+  const handleMouseEnter = (name: string) => {
+    if (!openDropdowns.includes(name)) {
+      setOpenDropdowns((prev) => [...prev, name]);
+    }
+  };
+
+  const handleMouseLeave = (name: string) => {
+    setOpenDropdowns((prev) => prev.filter((item) => item !== name));
   };
 
   const NavItem = ({
@@ -64,34 +37,39 @@ export default function Navbar() {
     const isActive = activeItem === item.href;
 
     return (
-      <div className={`relative ${mobile ? "w-full" : ""}`}>
+      <div
+        className={`relative ${mobile ? "w-full" : ""}`}
+        onMouseEnter={() => handleMouseEnter(item.name)}
+        onMouseLeave={() => handleMouseLeave(item.name)}
+      >
         {item.subItems ? (
           <>
-            <button
-              onClick={() => toggleDropdown(item.name)}
-              className={`flex items-center justify-between w-full px-4 py-2 text-sm font-medium ${
-                mobile
-                  ? "text-gray-700 hover:bg-gray-100"
-                  : `text-gray-700 hover:bg-gray-100 ${
-                      isActive ? "bg-gray-100" : ""
-                    }`
-              } ${depth > 0 ? "pl-8" : ""}`}
-              aria-expanded={isOpen}
-            >
-              {item.name}
-              <ChevronDown
-                className={`ml-1 h-4 w-4 transform ${
-                  isOpen ? "rotate-180" : ""
-                }`}
-              />
-            </button>
+            <Link href={item.href}>
+              <button
+                className={`flex items-center justify-between w-full px-4 py-2 text-sm font-medium ${
+                  mobile
+                    ? "text-gray-700 hover:bg-gray-100"
+                    : `text-gray-700 hover:bg-gray-100 ${
+                        isActive ? "bg-gray-100" : ""
+                      }`
+                } ${depth > 0 ? "pl-8" : ""}`}
+                aria-expanded={isOpen}
+              >
+                {item.name}
+                <ChevronDown
+                  className={`ml-1 h-4 w-4 transform ${
+                    isOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+            </Link>
             {isOpen && (
               <div
                 className={`${
                   mobile
-                    ? "pl-4"
+                    ? "pl-4 mt-20"
                     : `absolute ${
-                        depth > 0 ? "left-full top-0" : "left-0 mt-2"
+                        depth > 0 ? "left-full top-0" : "left-0 mt-0"
                       } w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10`
                 }`}
               >
@@ -176,24 +154,6 @@ export default function Navbar() {
             {navItems.map((item) => (
               <NavItem key={item.name} item={item} mobile />
             ))}
-          </div>
-        </div>
-      )}
-
-      {isSearchOpen && (
-        <div className="absolute top-16 left-0 w-full bg-white shadow-md p-4">
-          <div className="max-w-7xl mx-auto">
-            <div className="relative">
-              <input
-                type="text"
-                className="w-full p-2 pl-10 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
-                placeholder="Search..."
-              />
-              <Search
-                className="absolute left-3 top-2.5 h-5 w-5 text-gray-400"
-                aria-hidden="true"
-              />
-            </div>
           </div>
         </div>
       )}

@@ -10,6 +10,7 @@ import "swiper/css/bundle";
 import "aos/dist/aos.css";
 import "aos/dist/aos.css";
 import Header from "@/components/Header/Header";
+import MobileHeader from "@/components/Header/HeaderMobile";
 
 export const metadata: Metadata = {
   title: "MasyDase",
@@ -25,6 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`antialiased`}>
         <Header />
+        <MobileHeader />
         {children}
       </body>
     </html>
