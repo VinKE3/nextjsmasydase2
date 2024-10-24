@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-
 import "./globals.css";
 import "./style.css";
 // Custom Style
@@ -8,7 +7,7 @@ import "glightbox/dist/css/glightbox.min.css";
 import "swiper/css";
 import "swiper/css/bundle";
 import "aos/dist/aos.css";
-import "aos/dist/aos.css";
+
 import Header from "@/components/Header/Header";
 import MobileHeader from "@/components/Header/HeaderMobile";
 

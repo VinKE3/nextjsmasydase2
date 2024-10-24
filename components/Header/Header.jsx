@@ -14,21 +14,24 @@ export default function DemoHeaderOne() {
   const headerRef = useRef(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (headerRef.current) {
-        if (window.scrollY >= 76) {
-          headerRef.current.classList.remove("h1-header-sticky-qs");
-        } else {
-          headerRef.current.classList.add("h1-header-sticky-qs");
+    // Verificar que el código solo se ejecute en el cliente
+    if (typeof window !== "undefined") {
+      const handleScroll = () => {
+        if (headerRef.current) {
+          if (window.scrollY >= 76) {
+            headerRef.current.classList.remove("h1-header-sticky-qs");
+          } else {
+            headerRef.current.classList.add("h1-header-sticky-qs");
+          }
         }
-      }
-    };
+      };
 
-    window.addEventListener("scroll", handleScroll);
-    // Clean up the event listener on component unmount
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+      window.addEventListener("scroll", handleScroll);
+      // Clean up the event listener on component unmount
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
   }, []);
   return (
     <>
@@ -56,7 +59,7 @@ export default function DemoHeaderOne() {
                     <MailCheckIcon className="text-white" />
                   </span>
                   <span className="font-bold text-white">
-                    Email : <u>infoquland@gmail.com</u>
+                    Email : <u>ventas@masydase.com</u>
                   </span>
                 </div>
                 <div className="flex space-x-2.5 items-center mr-7">
@@ -64,7 +67,7 @@ export default function DemoHeaderOne() {
                     <PhoneCallIcon />
                   </span>
                   <span className="font-bold text-white">
-                    Cel : 000 (123) 456 88
+                    Cel : (+51)987351513
                   </span>
                 </div>
 
@@ -103,7 +106,12 @@ export default function DemoHeaderOne() {
               <div className="flex 2xl:space-x-[100px] xl:space-x-10 justify-between items-center w-full xl:w-auto">
                 <div>
                   <Link href="/" aria-label="logo">
-                    <img src="/assets/images/logo/MS.2.png" alt="" />
+                    <img
+                      src="/assets/images/logo/logo2.png"
+                      width={170}
+                      height={100}
+                      alt=""
+                    />
                   </Link>
                 </div>
               </div>

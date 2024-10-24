@@ -26,7 +26,7 @@
   @apply py-2.5 px-7;
 }
 .section-title-top-tag {
-  @apply text-purple font-medium px-5 py-3 bg-main-gray border border-[#e7e3fa] leading-none rounded-full inline-block;
+  @apply text-masyp font-medium px-5 py-3 bg-main-gray border border-[#e7e3fa] leading-none rounded-full inline-block;
 }
 .section-title-top-tag-two {
   @apply px-5 py-3 text-white font-medium rounded-full border border-[#2D2539] bg-white bg-opacity-5 inline-block leading-none;

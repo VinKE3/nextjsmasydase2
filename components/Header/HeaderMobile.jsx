@@ -46,7 +46,12 @@ const MobileHeader = () => {
     <header className="relative flex flex-col xl:hidden">
       <div className="h-16 bg-white flex items-center justify-between fixed top-0 left-0 z-50 w-full px-2.5">
         <Link href="/" aria-label="logo">
-          <img src="/assets/images/home-two/logo.svg" alt="logo" />
+          <img
+            src="/assets/images/logo/logo2.png"
+            width={170}
+            height={100}
+            alt=""
+          />
         </Link>
         <button
           aria-label="mobile-Menu"

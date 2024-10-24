@@ -15,19 +15,20 @@ const ShuffleHero = () => {
   return (
     <section className="w-full px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto">
       <div>
-        <span className="block mb-4 text-xs md:text-sm text-masys font-medium">
+        <span className="block mb-4 text-xs md:text-sm text-paragraph font-medium">
           Mejores cada día
         </span>
         <h3 className="text-4xl md:text-6xl text-masyp font-semibold">
           Transformamos idéas en soluciones
         </h3>
-        <p className="text-base md:text-lg text-masys my-4 md:my-6">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam nobis in
-          error repellat voluptatibus ad.
+        <p className="text-base md:text-lg text-paragraph my-4 md:my-6">
+          En MASYDASE, somos un equipo joven especializado en el desarrollo de
+          soluciones tecnológicas que impulsan la transformación digital de tu
+          empresa.
         </p>
         <Link
           href="#servicios"
-          className="bg-masyp text-white font-medium py-2 px-4 rounded transition-all hover:bg-masyp/50 active:scale-95"
+          className="bg-masyp text-white font-medium py-2 px-4 rounded transition-all hover:bg-masyp/90 active:scale-95"
         >
           Servicios
         </Link>

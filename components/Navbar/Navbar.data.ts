@@ -25,7 +25,7 @@ export const navItems = [
         ],
       },
       { name: "VPS", href: "#vps" },
-      { name: "Utilcons", href: "#utilcon" },
+      { name: "Utilcon", href: "#utilcon" },
     ],
   },
   { name: "Outsourcing Contable", href: "#outsourcing-contable" },
