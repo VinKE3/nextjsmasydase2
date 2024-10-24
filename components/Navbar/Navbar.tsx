@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { ChevronDown, X } from "lucide-react";
 import { navItems } from "./Navbar.data";
 import Link from "next/link";
@@ -8,11 +8,6 @@ import Link from "next/link";
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdowns, setOpenDropdowns] = useState<string[]>([]);
-  const [activeItem, setActiveItem] = useState("");
-
-  useEffect(() => {
-    setActiveItem(window.location.pathname);
-  }, []);
 
   const handleMouseEnter = (name: string) => {
     if (!openDropdowns.includes(name)) {
@@ -34,7 +29,6 @@ export default function Navbar() {
     depth?: number;
   }) => {
     const isOpen = openDropdowns.includes(item.name);
-    const isActive = activeItem === item.href;
 
     return (
       <div
@@ -49,9 +43,7 @@ export default function Navbar() {
                 className={`flex items-center justify-between w-full px-4 py-2 text-sm font-medium ${
                   mobile
                     ? "text-gray-700 hover:bg-gray-100"
-                    : `text-gray-700 hover:bg-gray-100 ${
-                        isActive ? "bg-gray-100" : ""
-                      }`
+                    : `text-gray-700 hover:bg-gray-100`
                 } ${depth > 0 ? "pl-8" : ""}`}
                 aria-expanded={isOpen}
               >
@@ -92,11 +84,8 @@ export default function Navbar() {
             className={`block px-4 py-2 text-sm ${
               mobile
                 ? "text-gray-700 hover:bg-gray-100"
-                : `text-gray-700 hover:bg-gray-100 ${
-                    isActive ? "bg-gray-100" : ""
-                  }`
+                : `text-gray-700 hover:bg-gray-100 `
             } ${depth > 0 ? "pl-8" : ""}`}
-            onClick={() => setActiveItem(item.href)}
           >
             {item.name}
           </a>

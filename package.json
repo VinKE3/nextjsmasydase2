@@ -21,6 +21,8 @@
     "clsx": "^2.1.1",
     "framer-motion": "^11.11.9",
     "glightbox": "^3.3.0",
+    "js": "^0.1.0",
+    "lightgallery": "^2.7.2",
     "lottie-react": "^2.4.0",
     "lucide-react": "^0.453.0",
     "next": "15.0.0",

@@ -1,17 +1,20 @@
 "use client";
+import { X } from "lucide-react";
 import Link from "next/link";
-import React from "react";
-import GLightbox from "glightbox";
-import "glightbox/dist/css/glightbox.min.css";
+import React, { useState } from "react";
 
 const LiquidacionesCompra = () => {
-  React.useEffect(() => {
-    GLightbox({
-      selector: ".video-play-btn",
-      touchNavigation: true,
-      loop: false,
-    });
-  }, []);
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Función para abrir el modal
+  const handleOpenModal = () => {
+    setIsOpen(true);
+  };
+
+  // Función para cerrar el modal
+  const handleCloseModal = () => {
+    setIsOpen(false);
+  };
   return (
     <section className="mt-20" id="about">
       <div className="w-full mx-auto theme-container">
@@ -101,16 +104,16 @@ const LiquidacionesCompra = () => {
               alt=""
               className="relative z-10 hidden sm:block"
             />
-            {/* <img
+            <img
               data-aos="fade-left"
               data-aos-delay="100"
-              src="./assets/images/liquidacionCompras/liqui1.png"
+              src="./assets/images/liquidacionCompras/liqui2.png"
               alt=""
               className="relative z-10"
-            /> */}
+            />
             <div className="bg-masyp p-[30px] rounded-2xl absolute z-20 bottom-8 w-[295px]">
-              <a
-                href="https://www.youtube-nocookie.com/embed/JdqL89ZZwFw?si=jnriuBsR3pv2EoUa"
+              <button
+                onClick={handleOpenModal}
                 aria-label="play-video"
                 className="flex items-center space-x-8 video-play-btn ml-7 sm:ml-0"
               >
@@ -136,7 +139,32 @@ const LiquidacionesCompra = () => {
                 <span className="font-semibold text-white border-b border-white">
                   ¿Como Funciona?
                 </span>
-              </a>
+              </button>
+            </div>
+            <div className="relative">
+              {/* Modal */}
+              {isOpen && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
+                  <div className="relative bg-white p-4 rounded-lg">
+                    <button
+                      className="absolute top-2 right-2 bg-red-500 rounded-xl"
+                      onClick={handleCloseModal}
+                    >
+                      <X className="text-white" />
+                    </button>
+                    <div className="w-[750px] h-96">
+                      <iframe
+                        className="w-full h-full"
+                        src="https://www.youtube-nocookie.com/embed/JdqL89ZZwFw?si=jnriuBsR3pv2EoUa"
+                        title="Video"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
