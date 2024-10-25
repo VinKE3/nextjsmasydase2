@@ -7,6 +7,8 @@ import Pricing from "@/components/Princing/Pricing";
 import LiquidacionesCompra from "@/components/LiquidacionesCompra/LiquidacionesCompra";
 import GuiasRemision from "@/components/GuiasRemision/GuiasRemision";
 import Utilcon from "@/components/Utilcon/Utilcon";
+import DesarrolloWeb from "@/components/DesarrolloWeb/DesarrolloWeb";
+import Vps from "@/components/Vps/Vps";
 export default function Home() {
   return (
     <>
@@ -18,7 +20,9 @@ export default function Home() {
       <Pricing />
       <LiquidacionesCompra />
       <GuiasRemision />
+      <Vps />
       <Utilcon />
+      <DesarrolloWeb />
     </>
   );
 }
