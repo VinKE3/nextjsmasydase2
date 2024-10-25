@@ -76,7 +76,7 @@
 /* h5 button active  */
 
 .h5-service-btn.active-tab {
-  @apply bg-buisness-red shadow-business-red;
+  @apply bg-masyp shadow-masyp;
 }
 .h5-service-btn.active-tab > span {
   @apply text-white;

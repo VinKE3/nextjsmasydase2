@@ -5,6 +5,8 @@ import FunFactOne from "@/components/FunFact/FunFact";
 import Services from "@/components/Services/Services";
 import Pricing from "@/components/Princing/Pricing";
 import LiquidacionesCompra from "@/components/LiquidacionesCompra/LiquidacionesCompra";
+import GuiasRemision from "@/components/GuiasRemision/GuiasRemision";
+import Utilcon from "@/components/Utilcon/Utilcon";
 export default function Home() {
   return (
     <>
@@ -15,6 +17,8 @@ export default function Home() {
       <Services />
       <Pricing />
       <LiquidacionesCompra />
+      <GuiasRemision />
+      <Utilcon />
     </>
   );
 }

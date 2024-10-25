@@ -16,7 +16,7 @@ const LiquidacionesCompra = () => {
     setIsOpen(false);
   };
   return (
-    <section className="mt-20" id="about">
+    <section className="mt-20 mb-20" id="about">
       <div className="w-full mx-auto theme-container">
         <div className="grid grid-cols-6 xl:grid-cols-12 gap-y-10">
           <div className="col-span-6">
@@ -98,12 +98,12 @@ const LiquidacionesCompra = () => {
                 strokeWidth="1.2"
               />
             </svg>
-            <img
+            {/* <img
               data-aos="fade-left"
               src="./assets/images/liquidacionCompras/liqui2.png"
               alt=""
               className="relative z-10 hidden sm:block"
-            />
+            /> */}
             <img
               data-aos="fade-left"
               data-aos-delay="100"
