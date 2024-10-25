@@ -10,6 +10,7 @@ import "aos/dist/aos.css";
 
 import Header from "@/components/Header/Header";
 import MobileHeader from "@/components/Header/HeaderMobile";
+import Footer from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "MasyDase",
@@ -27,6 +28,7 @@ export default function RootLayout({
         <Header />
         <MobileHeader />
         {children}
+        <Footer />
       </body>
     </html>
   );

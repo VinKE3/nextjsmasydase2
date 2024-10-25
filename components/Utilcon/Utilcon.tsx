@@ -276,15 +276,13 @@ const Utilcon = () => {
         <div className="absolute top-0 z-0 w-full bg-white h-1/2"></div>
         <div className="absolute bottom-0 z-0 w-full h-1/2 bg-buisness-light-black"></div>
         <div className="relative z-10 w-full mx-auto theme-container">
-          <div className="flex flex-col justify-between gap-5 pt-3 pl-5 pr-5 md:pt-10 lg:pt-0 xl:pl-28 xl:pr-28 bg-buisness-gray lg:flex-row">
-            {/* <!-- buttons  --> */}
-            {/* <!-- h5-button-active --> */}
+          <div className="flex flex-col justify-between gap-5 pt-3 pl-5 pr-5 md:pt-10 lg:pt-0  bg-buisness-gray lg:flex-row">
             <div className="flex lg:flex-col gap-1 sm:gap-5 lg:w-full max-w-[446px] lg:py-[70px]">
               {tabs.map((tab, index) => (
                 <button
                   key={tab.name}
                   name={tab.name}
-                  className={`group md:w-full p-1.5 md:p-3 lg:py-5 rounded-[40px] flex items-center border border-buisness-dark-black/10 bg-white hover:bg-masyp transition-all duration-300 hover:shadow-business-red tab_item  h5-service-btn ${
+                  className={`group md:w-full p-1.5 md:p-3 lg:py-5 rounded-[40px] flex items-center border border-buisness-dark-black/10 bg-white hover:bg-masyp transition-all duration-300 hover:shadow-masyp tab_item  h5-service-btn ${
                     activeTab === tab.name ? "active-tab" : ""
                   }`}
                   onClick={() => handleTabClick(tab.name, index)}
@@ -301,7 +299,7 @@ const Utilcon = () => {
             {/* <!-- elements  --> */}
             <div
               ref={mainTabSectionRef}
-              className="max-w-[520px] overflow-x-scroll flex transition-all duration-300 scroll-smooth relative no-scrollbar py-5 sm:py-10 md:py-[70px] main-tab-section w-full"
+              className="max-w-full overflow-x-scroll flex transition-all duration-300 scroll-smooth relative no-scrollbar py-5 sm:py-10 md:py-[70px] main-tab-section w-full md:pl-7"
             >
               <div className="relative max-w-full min-w-full" id="first">
                 <svg
@@ -334,19 +332,19 @@ const Utilcon = () => {
                 </svg>
                 <div className="relative z-10">
                   <h1 className="text-20 sm:text-24 text-main-black font-semibold mt-4 md:mt-[50px]">
-                    Elevating Your Presence through Strategic Marketing and
-                    Advertising Solutions
+                    Provisión de Compras, Ventas, Honorarios y Bancos
                   </h1>
-                  <p className="mt-4 text-paragraph md:mt-6">
-                    Agencies may offer services related to market research,
-                    branding, advertising campaigns, digital marketing, social
-                    media management, and content creation to help businesses
-                    promote
-                  </p>
+                  {/* <p className="mt-4 text-paragraph md:mt-6">
+                    Simplifica tu contabilidad, ahorra tiempo y automatiza tus
+                    procesos. Provisiona ventas, compras, honorarios y bancos
+                    directamente con solo cargar un archivo Excel.
+                  </p> */}
                   <img
-                    src="/assets/images/home-five/hero/service-img.webp"
+                    src="/assets/images/provisiones/provision.png"
                     alt=""
-                    className="object-cover w-full mt-4 md:mt-14 rounded-2xl"
+                    className="object-cover rounded-2xl"
+                    height={507}
+                    width={700}
                   />
                 </div>
                 <div className="absolute top-0 right-0 hidden md:block">
@@ -358,48 +356,48 @@ const Utilcon = () => {
               </div>
               <div className="relative max-w-full min-w-full" id="second">
                 <svg
-                  width="40"
-                  height="41"
-                  viewBox="0 0 40 41"
+                  width="62"
+                  height="65"
+                  viewBox="0 0 62 65"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    className="transition-all duration-300 ease-in-out fill-masyp group-hover:fill-white"
-                    d="M22.8626 16.8756L18.0006 21.7376L17.1386 20.8756C16.877 20.623 16.4612 20.6266 16.2041 20.8837C15.9469 21.1409 15.9433 21.5567 16.1959 21.8183L17.5293 23.1516C17.7896 23.4119 18.2116 23.4119 18.4719 23.1516L23.8053 17.8183C24.0579 17.5567 24.0543 17.1409 23.7971 16.8837C23.54 16.6266 23.1242 16.623 22.8626 16.8756Z"
+                    d="M40.0626 20.672C33.7192 11.3397 25.247 6.37963 20.8102 9.41873C20.3217 9.76278 19.8971 10.1897 19.5559 10.6802C19.5559 10.7161 9.28458 31.5024 9.28458 31.5024L3.55043 35.3873C2.67015 35.9848 1.91624 36.7499 1.33174 37.6389C0.747243 38.5279 0.343623 39.5234 0.143937 40.5684C-0.0557495 41.6134 -0.0475897 42.6876 0.16795 43.7294C0.38349 44.7713 0.802187 45.7605 1.40012 46.6405L1.65816 47.0204C2.86678 48.781 4.72078 49.9942 6.81803 50.3967C8.91528 50.7992 11.0867 50.3587 12.8613 49.1707L22.0717 62.7392C23.4264 64.4092 26.0283 66.0721 29.2394 64.1154C29.8083 63.7465 30.2935 63.2625 30.6639 62.6946C31.0343 62.1267 31.2815 61.4875 31.3897 60.8182C31.5194 60.1525 31.5159 59.4677 31.3794 58.8033C31.2428 58.1389 30.9759 57.5082 30.5941 56.9477L22.4803 44.9776C22.4803 44.9776 41.661 43.4509 41.7327 43.4222C42.3316 43.2969 42.8994 43.0532 43.4028 42.7055C45.6821 41.1572 46.4992 37.9103 45.7108 33.5595C45.0012 29.5528 42.987 25.0156 40.0626 20.672ZM3.74396 45.6084L3.48592 45.2285C3.07337 44.6211 2.78466 43.9384 2.63631 43.2193C2.48796 42.5003 2.48287 41.759 2.62136 41.038C2.75984 40.3169 3.03916 39.6303 3.44334 39.0174C3.84752 38.4044 4.36861 37.8772 4.9768 37.4659L9.92967 34.0971L16.4666 43.7233L11.5137 47.0921C10.9062 47.5052 10.2233 47.7945 9.50396 47.9435C8.7846 48.0925 8.04294 48.0982 7.32136 47.9604C6.59977 47.8227 5.91242 47.544 5.29859 47.1404C4.68476 46.7368 4.15648 46.2162 3.74396 45.6084ZM28.5298 58.3597C28.9216 58.9426 29.0661 59.6571 28.9317 60.3464C28.7974 61.0357 28.395 61.6436 27.813 62.0367C27.229 62.4288 26.5134 62.5736 25.8229 62.4392C25.1324 62.3049 24.5233 61.9024 24.1289 61.32L14.947 47.7945L18.6384 45.2858L19.6132 45.207L28.5298 58.3597ZM18.8391 42.7485L11.7144 32.255L18.5094 18.3998C19.1688 22.2919 21.0969 26.9151 24.179 31.4522C27.2611 35.9893 30.845 39.4872 34.2138 41.5371L18.8391 42.7485ZM39.9838 41.0784C36.5576 40.8562 30.9812 36.9928 26.2577 30.033C21.5342 23.0732 20.0003 16.4861 21.0539 13.2104C21.2442 12.5956 21.6239 12.0566 22.1388 11.6704C22.6537 11.2842 23.2775 11.0706 23.921 11.0601C27.3185 11.0601 33.1028 14.945 37.9625 22.1055C40.7005 26.1338 42.6932 30.3484 43.2379 34.0326C44.3059 41.0784 39.9838 41.0784 39.9838 41.0784Z"
                     fill="#034281"
                   />
                   <path
-                    className="transition-all duration-300 ease-in-out fill-masyp group-hover:fill-white"
-                    d="M30.6673 21.347C30.6346 21.347 30.6059 21.347 30.5746 21.347C31.0107 18.0746 29.8972 14.7858 27.5628 12.4514C25.2284 10.117 21.9397 9.00353 18.6673 9.43963C18.6673 9.40829 18.6673 9.37963 18.6673 9.34696C18.6732 4.98909 15.6626 1.20715 11.4144 0.235752C7.16617 -0.735642 2.81116 1.3621 0.922595 5.28949C-0.965971 9.21688 0.114645 13.9284 3.52594 16.6403C3.53661 16.6516 3.55194 16.6576 3.56328 16.6683C4.41055 17.3397 5.36816 17.8585 6.39328 18.2016C6.40661 18.2076 6.42061 18.2116 6.43461 18.217C7.37039 18.5241 8.34905 18.6805 9.33394 18.6803H9.42661C8.99052 21.9527 10.104 25.2415 12.4384 27.5759C14.7728 29.9102 18.0615 31.0237 21.3339 30.5876V30.6803C21.3354 33.5218 22.6335 36.2073 24.8593 37.9736C24.8699 37.985 24.8853 37.991 24.8966 38.0016C25.7439 38.673 26.7015 39.1918 27.7266 39.535C27.7399 39.541 27.7539 39.545 27.7679 39.5503C29.6512 40.1728 31.6847 40.1728 33.5679 39.5503C33.5819 39.545 33.5959 39.541 33.6093 39.535C34.6343 39.192 35.5917 38.6731 36.4386 38.0016C36.4506 37.991 36.466 37.985 36.4766 37.9736C39.5839 35.5059 40.7891 31.3419 39.4803 27.5959C38.1714 23.85 34.6353 21.3426 30.6673 21.347ZM30.6673 32.0136C29.5803 32.02 28.5592 31.4934 27.9342 30.604C27.3092 29.7147 27.1596 28.5755 27.5339 27.555C28.0499 27.0373 28.5114 26.4681 28.9113 25.8563C29.4366 25.5236 30.0455 25.347 30.6673 25.347C32.5082 25.347 34.0006 26.8393 34.0006 28.6803C34.0006 30.5212 32.5082 32.0136 30.6673 32.0136ZM1.33394 9.34696C1.33394 4.92868 4.91567 1.34696 9.33394 1.34696C13.7522 1.34696 17.3339 4.92868 17.3339 9.34696C17.3339 9.47163 17.3299 9.58696 17.3253 9.7003C15.9169 10.066 14.5988 10.7173 13.4526 11.6136C13.093 11.342 12.6951 11.1252 12.2719 10.9703C13.8081 9.72621 14.3938 7.64924 13.7339 5.78588C13.074 3.92253 11.3117 2.67709 9.33494 2.67709C7.35819 2.67709 5.59588 3.92253 4.93599 5.78588C4.27609 7.64924 4.86178 9.72621 6.39794 10.9703C4.79038 11.5618 3.63518 12.9854 3.38728 14.6803C2.06624 13.218 1.3346 11.3176 1.33394 9.34696ZM6.00061 7.34696C6.00061 5.50601 7.49299 4.01363 9.33394 4.01363C11.1749 4.01363 12.6673 5.50601 12.6673 7.34696C12.6673 9.18791 11.1749 10.6803 9.33394 10.6803C7.49391 10.6781 6.00281 9.187 6.00061 7.34696ZM9.33394 17.347C8.6588 17.3445 7.98673 17.256 7.33394 17.0836V15.347C7.33394 14.9788 7.03547 14.6803 6.66728 14.6803C6.29909 14.6803 6.00061 14.9788 6.00061 15.347V16.6136C5.5321 16.3977 5.08558 16.1369 4.66728 15.835V15.347C4.66948 13.5069 6.16057 12.0158 8.00061 12.0136H10.6673C11.288 12.013 11.8962 12.1885 12.4213 12.5196C11.1013 13.8568 10.1584 15.5192 9.68794 17.3383C9.57328 17.343 9.45794 17.347 9.33394 17.347ZM10.6673 20.0136C10.6673 14.859 14.846 10.6803 20.0006 10.6803C25.1553 10.6803 29.3339 14.859 29.3339 20.0136C29.3339 25.1683 25.1553 29.347 20.0006 29.347C14.8482 29.3415 10.6728 25.166 10.6673 20.0136ZM22.6673 30.6803C22.6673 30.5556 22.6713 30.4403 22.6759 30.327C23.866 30.0218 24.9939 29.512 26.0093 28.8203C26.0494 30.177 26.6792 31.4487 27.7339 32.303C26.1252 32.8938 24.9688 34.3178 24.7206 36.0136C23.3996 34.5513 22.6679 32.651 22.6673 30.6803ZM28.6673 38.4136V36.6803C28.6673 36.3121 28.3688 36.0136 28.0006 36.0136C27.6324 36.0136 27.3339 36.3121 27.3339 36.6803V37.947C26.8654 37.731 26.4189 37.4702 26.0006 37.1683V36.6803C26.0028 34.8403 27.4939 33.3492 29.3339 33.347H32.0006C33.8406 33.3492 35.3317 34.8403 35.3339 36.6803V37.165C34.9158 37.4681 34.4693 37.7299 34.0006 37.947V36.6803C34.0006 36.3121 33.7021 36.0136 33.3339 36.0136C32.9658 36.0136 32.6673 36.3121 32.6673 36.6803V38.4136C31.3571 38.7647 29.9775 38.7647 28.6673 38.4136ZM36.6139 36.0136C36.3658 34.3178 35.2094 32.8938 33.6006 32.303C35.1331 31.0585 35.7167 28.9845 35.0582 27.1235C34.3996 25.2625 32.6414 24.0172 30.6673 24.0136C30.3941 24.0158 30.1217 24.0424 29.8533 24.093C30.0392 23.6362 30.1931 23.1671 30.3139 22.689C30.4279 22.6843 30.5433 22.6803 30.6673 22.6803C33.8247 22.6749 36.689 24.5301 37.9751 27.4138C39.2612 30.2974 38.7277 33.6681 36.6139 36.0136Z"
+                    d="M31.1022 20.9367C30.2243 20.7643 29.3207 20.7686 28.4444 20.9496C27.5682 21.1305 26.7368 21.4843 25.9988 21.9903C25.8628 22.0845 25.7467 22.2045 25.6571 22.3435C25.5674 22.4825 25.506 22.6378 25.4764 22.8005C25.4468 22.9633 25.4495 23.1302 25.4844 23.2919C25.5193 23.4536 25.5858 23.6068 25.6799 23.7428C25.774 23.8788 25.894 23.995 26.033 24.0846C26.172 24.1743 26.3273 24.2357 26.4901 24.2653C26.6528 24.2949 26.8198 24.2922 26.9815 24.2573C27.1431 24.2223 27.2964 24.1559 27.4324 24.0618C27.8997 23.7446 28.425 23.5225 28.9781 23.4083C29.5313 23.2941 30.1015 23.2899 30.6563 23.3961C31.2111 23.5023 31.7395 23.7167 32.2114 24.027C32.6833 24.3374 33.0894 24.7377 33.4066 25.205C33.7239 25.6724 33.9459 26.1976 34.0601 26.7508C34.1744 27.3039 34.1785 27.8742 34.0723 28.429C33.9662 28.9837 33.7518 29.5121 33.4414 29.984C33.131 30.4559 32.7307 30.8621 32.2634 31.1793C32.043 31.3315 31.8772 31.5502 31.7901 31.8034C31.7029 32.0567 31.6992 32.3311 31.7793 32.5867C31.8594 32.8422 32.0192 33.0654 32.2352 33.2236C32.4513 33.3818 32.7124 33.4667 32.9802 33.4658C33.2357 33.4706 33.4863 33.3954 33.6969 33.2508C34.8118 32.4956 35.6774 31.4264 36.1841 30.1789C36.6909 28.9313 36.8159 27.5614 36.5434 26.2426C36.2709 24.9239 35.6132 23.7158 34.6535 22.7712C33.6938 21.8266 32.4753 21.1882 31.1524 20.9367H31.1022Z"
                     fill="#034281"
                   />
                   <path
-                    className="transition-all duration-300 ease-in-out fill-masyp group-hover:fill-white"
-                    d="M23.8049 0.875611C23.5445 0.615356 23.1225 0.615356 22.8622 0.875611L20.8622 2.87561C20.6019 3.13594 20.6019 3.55794 20.8622 3.81828L22.8622 5.81828C23.1238 6.07093 23.5396 6.06731 23.7967 5.81016C24.0539 5.553 24.0575 5.1372 23.8049 4.87561L22.9755 4.04628C31.4122 4.5708 37.9894 11.5606 38.0002 20.0136C38.0002 20.3818 38.2987 20.6803 38.6669 20.6803C39.035 20.6803 39.3335 20.3818 39.3335 20.0136C39.3226 10.8018 32.1165 3.20353 22.9182 2.70494L23.8049 1.81828C24.0651 1.55794 24.0651 1.13594 23.8049 0.875611Z"
+                    d="M41.6101 11.9483H41.732C42.0422 11.9482 42.3414 11.8331 42.5718 11.6253C42.8021 11.4174 42.9472 11.1316 42.9791 10.823L43.9468 1.41901C43.9688 1.25272 43.9572 1.08371 43.9128 0.921965C43.8684 0.760222 43.7919 0.609037 43.688 0.477354C43.5841 0.345671 43.4548 0.236166 43.3079 0.155317C43.1609 0.0744685 42.9992 0.0239186 42.8324 0.00665841C42.6655 -0.0106018 42.4969 0.00577817 42.3365 0.0548293C42.1761 0.10388 42.0271 0.184606 41.8985 0.292231C41.7698 0.399855 41.6641 0.532192 41.5874 0.681411C41.5108 0.83063 41.4649 0.993701 41.4524 1.16097L40.492 10.5721C40.4579 10.9029 40.5565 11.2336 40.7662 11.4917C40.9759 11.7497 41.2794 11.914 41.6101 11.9483Z"
                     fill="#034281"
                   />
                   <path
-                    className="transition-all duration-300 ease-in-out fill-masyp group-hover:fill-white"
-                    d="M2.00033 20.0136C2.00033 19.6454 1.70185 19.3469 1.33366 19.3469C0.965469 19.3469 0.666992 19.6454 0.666992 20.0136C0.677906 29.2254 7.88403 36.8237 17.0823 37.3223L16.1957 38.2089C16.0224 38.3763 15.9529 38.6242 16.0139 38.8573C16.0749 39.0904 16.2569 39.2724 16.49 39.3334C16.7231 39.3944 16.9709 39.3249 17.1383 39.1516L19.1383 37.1516C19.3986 36.8913 19.3986 36.4693 19.1383 36.2089L17.1383 34.2089C16.8767 33.9563 16.4609 33.9599 16.2038 34.217C15.9466 34.4742 15.943 34.89 16.1957 35.1516L17.025 35.9809C8.58828 35.4564 2.01112 28.4666 2.00033 20.0136Z"
+                    d="M57.8246 10.0131C57.6404 9.73551 57.3539 9.54201 57.0276 9.47487C56.7013 9.40772 56.3616 9.47239 56.0828 9.65474L47.3454 15.3889C47.1185 15.5387 46.9465 15.7582 46.8551 16.0142C46.7638 16.2703 46.7581 16.5491 46.839 16.8087C46.9199 17.0683 47.0829 17.2946 47.3035 17.4535C47.5241 17.6124 47.7904 17.6953 48.0622 17.6897C48.3157 17.6956 48.5653 17.6257 48.7789 17.489L57.5163 11.7549C57.7874 11.5642 57.972 11.2739 58.0297 10.9476C58.0875 10.6212 58.0137 10.2853 57.8246 10.0131Z"
+                    fill="#034281"
+                  />
+                  <path
+                    d="M60.4957 25.3232L50.332 23.4954C50.004 23.4365 49.6661 23.5102 49.3926 23.7004C49.119 23.8906 48.9323 24.1817 48.8733 24.5096C48.8144 24.8375 48.8881 25.1754 49.0784 25.449C49.2686 25.7225 49.5596 25.9093 49.8876 25.9683L60.0442 27.796H60.2664C60.586 27.8054 60.8971 27.6923 61.1361 27.4799C61.3751 27.2676 61.524 26.972 61.5524 26.6535C61.5808 26.335 61.4865 26.0177 61.2887 25.7665C61.091 25.5152 60.8048 25.349 60.4886 25.3017L60.4957 25.3232Z"
                     fill="#034281"
                   />
                 </svg>
                 <div className="relative z-10">
-                  <h1 className="text-24 text-main-black font-semibold mt-4 md:mt-[50px]">
-                    Elevating Your Presence through Strategic Marketing and
-                    Advertising Solutions
+                  <h1 className="text-20 sm:text-24 text-main-black font-semibold mt-4 md:mt-[50px]">
+                    Cancelaciones Masivas de comprobantes
                   </h1>
-                  <p className="mt-4 text-paragraph md:mt-6">
-                    Agencies may offer services related to market research,
-                    branding, advertising campaigns, digital marketing, social
-                    media management, and content creation to help businesses
-                    promote
-                  </p>
+                  {/* <p className="mt-4 text-paragraph md:mt-6">
+                    Simplifica tu contabilidad, ahorra tiempo y automatiza tus
+                    procesos. Provisiona ventas, compras, honorarios y bancos
+                    directamente con solo cargar un archivo Excel.
+                  </p> */}
                   <img
-                    src="/assets/images/home-five/hero/service-img.webp"
+                    src="/assets/images/cancelaciones/cancelaciones_2.png"
                     alt=""
-                    className="object-cover w-full mt-4 md:mt-14 rounded-2xl"
+                    className="object-cover  rounded-2xl"
+                    height={507}
+                    width={600}
                   />
                 </div>
                 <div className="absolute top-0 right-0 hidden md:block">
@@ -439,20 +437,20 @@ const Utilcon = () => {
                   />
                 </svg>
                 <div className="relative z-10">
-                  <h1 className="text-24 text-main-black font-semibold mt-4 md:mt-[50px]">
-                    Elevating Your Presence through Strategic Marketing and
-                    Advertising Solutions
+                  <h1 className="text-20 sm:text-24 text-main-black font-semibold mt-4 md:mt-[50px]">
+                    Cancelaciones Masivas de comprobantes
                   </h1>
-                  <p className="mt-4 text-paragraph md:mt-6">
-                    Agencies may offer services related to market research,
-                    branding, advertising campaigns, digital marketing, social
-                    media management, and content creation to help businesses
-                    promote
-                  </p>
+                  {/* <p className="mt-4 text-paragraph md:mt-6">
+                    Simplifica tu contabilidad, ahorra tiempo y automatiza tus
+                    procesos. Provisiona ventas, compras, honorarios y bancos
+                    directamente con solo cargar un archivo Excel.
+                  </p> */}
                   <img
-                    src="/assets/images/home-five/hero/service-img.webp"
+                    src="/assets/images/eliminarCompra/eliminar_comprobante.png"
                     alt=""
-                    className="object-cover w-full mt-4 md:mt-14 rounded-2xl"
+                    className="object-cover  rounded-2xl"
+                    height={507}
+                    width={500}
                   />
                 </div>
                 <div className="absolute top-0 right-0 hidden md:block">
@@ -492,20 +490,20 @@ const Utilcon = () => {
                   />
                 </svg>
                 <div className="relative z-10">
-                  <h1 className="text-24 text-main-black font-semibold mt-4 md:mt-[50px]">
-                    Elevating Your Presence through Strategic Marketing and
-                    Advertising Solutions
+                  <h1 className="text-20 sm:text-24 pb-3 text-main-black font-semibold mt-4 md:mt-[50px]">
+                    Carga de anexos
                   </h1>
-                  <p className="mt-4 text-paragraph md:mt-6">
-                    Agencies may offer services related to market research,
-                    branding, advertising campaigns, digital marketing, social
-                    media management, and content creation to help businesses
-                    promote
-                  </p>
+                  {/* <p className="mt-4 text-paragraph md:mt-6">
+                    Simplifica tu contabilidad, ahorra tiempo y automatiza tus
+                    procesos. Provisiona ventas, compras, honorarios y bancos
+                    directamente con solo cargar un archivo Excel.
+                  </p> */}
                   <img
-                    src="/assets/images/home-five/hero/service-img.webp"
+                    src="/assets/images/anexos/anexos2.png"
                     alt=""
-                    className="object-cover w-full mt-4 md:mt-14 rounded-2xl"
+                    className="object-cover  rounded-2xl"
+                    height={400}
+                    width={700}
                   />
                 </div>
                 <div className="absolute top-0 right-0 hidden md:block">

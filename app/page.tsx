@@ -9,11 +9,14 @@ import GuiasRemision from "@/components/GuiasRemision/GuiasRemision";
 import Utilcon from "@/components/Utilcon/Utilcon";
 import DesarrolloWeb from "@/components/DesarrolloWeb/DesarrolloWeb";
 import Vps from "@/components/Vps/Vps";
+import Contacto from "@/components/Contacto/Contacto";
+import Partners from "@/components/Partners/Partners";
 export default function Home() {
   return (
     <>
       <SmoothScrollHero />
       <ShuffleHero />
+      <Partners />
       <AboutOne />
       <FunFactOne />
       <Services />
@@ -23,6 +26,7 @@ export default function Home() {
       <Vps />
       <Utilcon />
       <DesarrolloWeb />
+      <Contacto />
     </>
   );
 }
