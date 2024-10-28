@@ -115,6 +115,7 @@ export default function DemoHeaderOne() {
                   </Link>
                 </div>
               </div>
+
               <Navbar />
               <div className="xl:flex hidden space-x-[30px] items-center">
                 <Link href="#contacto">

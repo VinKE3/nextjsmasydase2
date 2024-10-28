@@ -7,8 +7,6 @@ import {
   useSpring,
 } from "framer-motion";
 
-import Link from "next/link";
-
 const ROTATION_RANGE = 32.5;
 const HALF_ROTATION_RANGE = 32.5 / 2;
 
