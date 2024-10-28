@@ -117,7 +117,7 @@ export default function DemoHeaderOne() {
               </div>
               <Navbar />
               <div className="xl:flex hidden space-x-[30px] items-center">
-                <Link href="/blog">
+                <Link href="#contacto">
                   <div className="py-3 home-two-btn-bg group bg-masyp border-masyp">
                     <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-masyp font-inter">
                       Contacto

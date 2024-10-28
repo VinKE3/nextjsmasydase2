@@ -2,7 +2,7 @@ import React from "react";
 
 const Contacto = () => {
   return (
-    <section className="py-16 md:py-[130px]">
+    <section id="contacto" className="py-16 md:py-[130px]">
       <div className="theme-container w-full mx-auto grid grid-cols-7 lg:grid-cols-12 gap-y-16 lg:gap-y-0 lg:gap-x-[70px]">
         {/* <!-- address start  --> */}
         <div className="col-span-7 lg:col-span-5">

@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import { X } from "lucide-react";
+import { Video, X } from "lucide-react";
 const GuiasRemision = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -38,7 +38,7 @@ const GuiasRemision = () => {
         spaceBetween: 40,
       },
       1024: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 50,
       },
     },
@@ -111,96 +111,22 @@ const GuiasRemision = () => {
             className="mt-10 overflow-hidden swiper case_study_slider md:mt-16"
           >
             <SwiperSlide>
-              <div className="bg-white rounded-[20px] pt-7 pb-5 px-2.5 relative group overflow-hidden transition-all duration-300 before:inline-block before:w-[800px] before:h-[800px] before:rounded-full before:bg-masyp before:absolute before:z-0 z-10 before:-bottom-[800px] before:-right-[800px] before:transition-all before:duration-1000 hover:before:-bottom-[150px] hover:before:-right-[150px]">
-                <div className="relative z-10 px-2 md:px-10">
-                  <p className="font-semibold leading-6 transition-all duration-300 ease-in-out delay-300 text-masyp group-hover:text-white">
-                    SEO Optimization
-                  </p>
-                  <a href="">
-                    <h1 className="pt-1 font-semibold transition-all duration-300 text-24 text-main-black group-hover:text-white underlines">
-                      How we helped improve Company users retention
-                    </h1>
-                  </a>
-                </div>
-                <img
-                  src="./assets/images/home-two/case_study/1.svg"
-                  alt=""
-                  className="max-w-[390px] w-full rounded-2xl mt-10 relative z-10"
-                />
-                <div className="relative z-10 flex justify-between px-10 mt-4">
-                  <button
-                    onClick={handleOpenModal}
-                    aria-label="play-video"
-                    className="flex items-center space-x-8 video-play-btn ml-7 sm:ml-0"
-                  >
-                    <div className="flex items-center gap-2 group">
-                      <span className="transition-all duration-300 font-medium group-hover:text-white text-masyp leading-5 font-inter border-b border-transparent before:inline-block before:border-white before:content-['Read More'] before:text-white before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5 relative">
-                        Ver video
-                      </span>
-                      <svg
-                        width="7"
-                        height="11"
-                        viewBox="0 0 7 11"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          className="transition-all duration-300 group-hover:stroke-white"
-                          d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
-                          stroke="#6D6D6D"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </div>
-                  </button>
-                  <button aria-label="share">
-                    <svg
-                      className=""
-                      width="22"
-                      height="22"
-                      viewBox="0 0 22 22"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        className="transition-all duration-300 group-hover:stroke-white"
-                        d="M7.63118 9.43441C7.05656 8.2874 5.87023 7.5 4.5 7.5C2.567 7.5 1 9.067 1 11C1 12.933 2.567 14.5 4.5 14.5C5.87023 14.5 7.05656 13.7126 7.63118 12.5656M7.63118 9.43441C7.86718 9.90549 8 10.4372 8 11C8 11.5628 7.86718 12.0945 7.63118 12.5656M7.63118 9.43441L14.3688 6.06559M7.63118 12.5656L14.3688 15.9344M14.3688 6.06559C14.9434 7.2126 16.1298 8 17.5 8C19.433 8 21 6.433 21 4.5C21 2.567 19.433 1 17.5 1C15.567 1 14 2.567 14 4.5C14 5.06276 14.1328 5.59451 14.3688 6.06559ZM14.3688 15.9344C14.1328 16.4055 14 16.9372 14 17.5C14 19.433 15.567 21 17.5 21C19.433 21 21 19.433 21 17.5C21 15.567 19.433 14 17.5 14C16.1298 14 14.9434 14.7874 14.3688 15.9344Z"
-                        stroke="#034281"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                <div className="relative"></div>
-                {/* <!-- animation circle  --> */}
-                <div className="absolute z-0 items-center justify-center hidden w-2 h-2 bottom-10 -right-1 group-hover:flex">
-                  <div className="animated_circle_sm bg-white/10"></div>
-                  <div className="animated_circle_sm2 bg-white/10"></div>
-                  <div className="animated_circle_sm3 bg-white/10"></div>
-                  <div className="animated_circle_sm4 bg-white/10"></div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
               {" "}
               <div className="bg-white rounded-[20px] pt-7 pb-5 px-2.5 relative group overflow-hidden transition-all duration-300 before:inline-block before:w-[800px] before:h-[800px] before:rounded-full before:bg-masyp before:absolute before:z-0 z-10 before:-bottom-[800px] before:-right-[800px] before:transition-all before:duration-1000 hover:before:-bottom-[150px] hover:before:-right-[150px]">
                 <div className="relative z-10 px-2 md:px-10">
-                  <p className="font-semibold leading-6 transition-all duration-300 ease-in-out delay-300 text-masyp group-hover:text-white">
-                    Keywords Research
+                  <p className="font-semibold leading-6 transition-all duration-300 ease-in-out delay-300 text-masyp ">
+                    Servicio
                   </p>
                   <a href="">
-                    <h1 className="pt-1 font-semibold transition-all duration-300 text-24 text-main-black group-hover:text-white underlines">
-                      How we helped improve keywords research users
+                    <h1 className="pt-1 font-semibold transition-all duration-300 text-24 text-main-black">
+                      Guías de remisión Remitente
                     </h1>
                   </a>
                 </div>
                 <img
-                  src="./assets/images/home-two/case_study/2.svg"
+                  src="./assets/images/anexos/anexos2.png"
                   alt=""
-                  className="max-w-[390px] w-full rounded-2xl mt-10 relative z-10"
+                  className="max-w-full w-full rounded-2xl mt-10 relative z-10 p-2"
                 />
                 <div className="relative z-10 flex justify-between px-10 mt-4">
                   <button
@@ -212,22 +138,7 @@ const GuiasRemision = () => {
                       <span className="transition-all duration-300 font-medium group-hover:text-white text-masyp leading-5 font-inter border-b border-transparent before:inline-block before:border-white before:content-['Read More'] before:text-white before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5 relative">
                         Ver video
                       </span>
-                      <svg
-                        width="7"
-                        height="11"
-                        viewBox="0 0 7 11"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          className="transition-all duration-300 group-hover:stroke-white"
-                          d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
-                          stroke="#6D6D6D"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
+                      <Video className="text-masyp transition-all duration-300 group-hover:stroke-white" />
                     </div>
                   </button>
                   <button aria-label="share">
@@ -261,19 +172,19 @@ const GuiasRemision = () => {
             <SwiperSlide>
               <div className="bg-white rounded-[20px] pt-7 pb-5 px-2.5 relative group overflow-hidden transition-all duration-300 before:inline-block before:w-[800px] before:h-[800px] before:rounded-full before:bg-masyp before:absolute before:z-0 z-10 before:-bottom-[800px] before:-right-[800px] before:transition-all before:duration-1000 hover:before:-bottom-[150px] hover:before:-right-[150px]">
                 <div className="relative z-10 px-2 md:px-10">
-                  <p className="font-semibold leading-6 transition-all duration-300 ease-in-out delay-300 text-masyp group-hover:text-white">
-                    Content Marketing
+                  <p className="font-semibold leading-6 transition-all duration-300 ease-in-out delay-300 text-masyp ">
+                    Servicio
                   </p>
                   <a href="">
-                    <h1 className="pt-1 font-semibold transition-all duration-300 text-24 text-main-black group-hover:text-white underlines">
-                      How we helped improve Company users retention
+                    <h1 className="pt-1 font-semibold transition-all duration-300 text-24 text-main-black">
+                      Guías de remision Transportistas
                     </h1>
                   </a>
                 </div>
                 <img
-                  src="./assets/images/home-two/case_study/1.svg"
+                  src="./assets/images/anexos/anexos2.png"
                   alt=""
-                  className="max-w-[390px] w-full rounded-2xl mt-10 relative z-10"
+                  className="max-w-full w-full rounded-2xl mt-10 relative z-10 p-2"
                 />
                 <div className="relative z-10 flex justify-between px-10 mt-4">
                   <button
@@ -285,241 +196,7 @@ const GuiasRemision = () => {
                       <span className="transition-all duration-300 font-medium group-hover:text-white text-masyp leading-5 font-inter border-b border-transparent before:inline-block before:border-white before:content-['Read More'] before:text-white before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5 relative">
                         Ver video
                       </span>
-                      <svg
-                        width="7"
-                        height="11"
-                        viewBox="0 0 7 11"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          className="transition-all duration-300 group-hover:stroke-white"
-                          d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
-                          stroke="#6D6D6D"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </div>
-                  </button>
-                  <button aria-label="share">
-                    <svg
-                      className=""
-                      width="22"
-                      height="22"
-                      viewBox="0 0 22 22"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        className="transition-all duration-300 group-hover:stroke-white"
-                        d="M7.63118 9.43441C7.05656 8.2874 5.87023 7.5 4.5 7.5C2.567 7.5 1 9.067 1 11C1 12.933 2.567 14.5 4.5 14.5C5.87023 14.5 7.05656 13.7126 7.63118 12.5656M7.63118 9.43441C7.86718 9.90549 8 10.4372 8 11C8 11.5628 7.86718 12.0945 7.63118 12.5656M7.63118 9.43441L14.3688 6.06559M7.63118 12.5656L14.3688 15.9344M14.3688 6.06559C14.9434 7.2126 16.1298 8 17.5 8C19.433 8 21 6.433 21 4.5C21 2.567 19.433 1 17.5 1C15.567 1 14 2.567 14 4.5C14 5.06276 14.1328 5.59451 14.3688 6.06559ZM14.3688 15.9344C14.1328 16.4055 14 16.9372 14 17.5C14 19.433 15.567 21 17.5 21C19.433 21 21 19.433 21 17.5C21 15.567 19.433 14 17.5 14C16.1298 14 14.9434 14.7874 14.3688 15.9344Z"
-                        stroke="#034281"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                {/* <!-- animation circle  --> */}
-                <div className="absolute z-0 items-center justify-center hidden w-2 h-2 bottom-10 -right-1 group-hover:flex">
-                  <div className="animated_circle_sm bg-white/10"></div>
-                  <div className="animated_circle_sm2 bg-white/10"></div>
-                  <div className="animated_circle_sm3 bg-white/10"></div>
-                  <div className="animated_circle_sm4 bg-white/10"></div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="bg-white rounded-[20px] pt-7 pb-5 px-2.5 relative group overflow-hidden transition-all duration-300 before:inline-block before:w-[800px] before:h-[800px] before:rounded-full before:bg-masyp before:absolute before:z-0 z-10 before:-bottom-[800px] before:-right-[800px] before:transition-all before:duration-1000 hover:before:-bottom-[150px] hover:before:-right-[150px]">
-                <div className="relative z-10 px-2 md:px-10">
-                  <p className="font-semibold leading-6 transition-all duration-300 ease-in-out delay-300 text-masyp group-hover:text-white">
-                    SEO Optimization
-                  </p>
-                  <a href="">
-                    <h1 className="pt-1 font-semibold transition-all duration-300 text-24 text-main-black group-hover:text-white underlines">
-                      How we helped improve Company users retention
-                    </h1>
-                  </a>
-                </div>
-                <img
-                  src="./assets/images/home-two/case_study/1.svg"
-                  alt=""
-                  className="max-w-[390px] w-full rounded-2xl mt-10 relative z-10"
-                />
-                <div className="relative z-10 flex justify-between px-10 mt-4">
-                  <button
-                    onClick={handleOpenModal}
-                    aria-label="play-video"
-                    className="flex items-center space-x-8 video-play-btn ml-7 sm:ml-0"
-                  >
-                    <div className="flex items-center gap-2 group">
-                      <span className="transition-all duration-300 font-medium group-hover:text-white text-masyp leading-5 font-inter border-b border-transparent before:inline-block before:border-white before:content-['Read More'] before:text-white before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5 relative">
-                        Ver video
-                      </span>
-                      <svg
-                        width="7"
-                        height="11"
-                        viewBox="0 0 7 11"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          className="transition-all duration-300 group-hover:stroke-white"
-                          d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
-                          stroke="#6D6D6D"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </div>
-                  </button>
-                  <button aria-label="share">
-                    <svg
-                      className=""
-                      width="22"
-                      height="22"
-                      viewBox="0 0 22 22"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        className="transition-all duration-300 group-hover:stroke-white"
-                        d="M7.63118 9.43441C7.05656 8.2874 5.87023 7.5 4.5 7.5C2.567 7.5 1 9.067 1 11C1 12.933 2.567 14.5 4.5 14.5C5.87023 14.5 7.05656 13.7126 7.63118 12.5656M7.63118 9.43441C7.86718 9.90549 8 10.4372 8 11C8 11.5628 7.86718 12.0945 7.63118 12.5656M7.63118 9.43441L14.3688 6.06559M7.63118 12.5656L14.3688 15.9344M14.3688 6.06559C14.9434 7.2126 16.1298 8 17.5 8C19.433 8 21 6.433 21 4.5C21 2.567 19.433 1 17.5 1C15.567 1 14 2.567 14 4.5C14 5.06276 14.1328 5.59451 14.3688 6.06559ZM14.3688 15.9344C14.1328 16.4055 14 16.9372 14 17.5C14 19.433 15.567 21 17.5 21C19.433 21 21 19.433 21 17.5C21 15.567 19.433 14 17.5 14C16.1298 14 14.9434 14.7874 14.3688 15.9344Z"
-                        stroke="#034281"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                {/* <!-- animation circle  --> */}
-                <div className="absolute z-0 items-center justify-center hidden w-2 h-2 bottom-10 -right-1 group-hover:flex">
-                  <div className="animated_circle_sm bg-white/10"></div>
-                  <div className="animated_circle_sm2 bg-white/10"></div>
-                  <div className="animated_circle_sm3 bg-white/10"></div>
-                  <div className="animated_circle_sm4 bg-white/10"></div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="bg-white rounded-[20px] pt-7 pb-5 px-2.5 relative group overflow-hidden transition-all duration-300 before:inline-block before:w-[800px] before:h-[800px] before:rounded-full before:bg-masyp before:absolute before:z-0 z-10 before:-bottom-[800px] before:-right-[800px] before:transition-all before:duration-1000 hover:before:-bottom-[150px] hover:before:-right-[150px]">
-                <div className="relative z-10 px-2 md:px-10">
-                  <p className="font-semibold leading-6 transition-all duration-300 ease-in-out delay-300 text-masyp group-hover:text-white">
-                    Keywords Research
-                  </p>
-                  <a href="">
-                    <h1 className="pt-1 font-semibold transition-all duration-300 text-24 text-main-black group-hover:text-white underlines">
-                      How we helped improve keywords research users
-                    </h1>
-                  </a>
-                </div>
-                <img
-                  src="./assets/images/home-two/case_study/2.svg"
-                  alt=""
-                  className="max-w-[390px] w-full rounded-2xl mt-10 relative z-10"
-                />
-                <div className="relative z-10 flex justify-between px-10 mt-4">
-                  <button
-                    onClick={handleOpenModal}
-                    aria-label="play-video"
-                    className="flex items-center space-x-8 video-play-btn ml-7 sm:ml-0"
-                  >
-                    <div className="flex items-center gap-2 group">
-                      <span className="transition-all duration-300 font-medium group-hover:text-white text-masyp leading-5 font-inter border-b border-transparent before:inline-block before:border-white before:content-['Read More'] before:text-white before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5 relative">
-                        Ver video
-                      </span>
-                      <svg
-                        width="7"
-                        height="11"
-                        viewBox="0 0 7 11"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          className="transition-all duration-300 group-hover:stroke-white"
-                          d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
-                          stroke="#6D6D6D"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </div>
-                  </button>
-                  <button aria-label="share">
-                    <svg
-                      className=""
-                      width="22"
-                      height="22"
-                      viewBox="0 0 22 22"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        className="transition-all duration-300 group-hover:stroke-white"
-                        d="M7.63118 9.43441C7.05656 8.2874 5.87023 7.5 4.5 7.5C2.567 7.5 1 9.067 1 11C1 12.933 2.567 14.5 4.5 14.5C5.87023 14.5 7.05656 13.7126 7.63118 12.5656M7.63118 9.43441C7.86718 9.90549 8 10.4372 8 11C8 11.5628 7.86718 12.0945 7.63118 12.5656M7.63118 9.43441L14.3688 6.06559M7.63118 12.5656L14.3688 15.9344M14.3688 6.06559C14.9434 7.2126 16.1298 8 17.5 8C19.433 8 21 6.433 21 4.5C21 2.567 19.433 1 17.5 1C15.567 1 14 2.567 14 4.5C14 5.06276 14.1328 5.59451 14.3688 6.06559ZM14.3688 15.9344C14.1328 16.4055 14 16.9372 14 17.5C14 19.433 15.567 21 17.5 21C19.433 21 21 19.433 21 17.5C21 15.567 19.433 14 17.5 14C16.1298 14 14.9434 14.7874 14.3688 15.9344Z"
-                        stroke="#034281"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                {/* <!-- animation circle  --> */}
-                <div className="absolute z-0 items-center justify-center hidden w-2 h-2 bottom-10 -right-1 group-hover:flex">
-                  <div className="animated_circle_sm bg-white/10"></div>
-                  <div className="animated_circle_sm2 bg-white/10"></div>
-                  <div className="animated_circle_sm3 bg-white/10"></div>
-                  <div className="animated_circle_sm4 bg-white/10"></div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="bg-white rounded-[20px] pt-7 pb-5 px-2.5 relative group overflow-hidden transition-all duration-300 before:inline-block before:w-[800px] before:h-[800px] before:rounded-full before:bg-masyp before:absolute before:z-0 z-10 before:-bottom-[800px] before:-right-[800px] before:transition-all before:duration-1000 hover:before:-bottom-[150px] hover:before:-right-[150px]">
-                <div className="relative z-10 px-2 md:px-10">
-                  <p className="font-semibold leading-6 transition-all duration-300 ease-in-out delay-300 text-masyp group-hover:text-white">
-                    Content Marketing
-                  </p>
-                  <a href="">
-                    <h1 className="pt-1 font-semibold transition-all duration-300 text-24 text-main-black group-hover:text-white underlines">
-                      How we helped improve Company users retention
-                    </h1>
-                  </a>
-                </div>
-                <img
-                  src="./assets/images/home-two/case_study/1.svg"
-                  alt=""
-                  className="max-w-[390px] w-full rounded-2xl mt-10 relative z-10"
-                />
-                <div className="relative z-10 flex justify-between px-10 mt-4">
-                  <button
-                    onClick={handleOpenModal}
-                    aria-label="play-video"
-                    className="flex items-center space-x-8 video-play-btn ml-7 sm:ml-0"
-                  >
-                    <div className="flex items-center gap-2 group">
-                      <span className="transition-all duration-300 font-medium group-hover:text-white text-masyp leading-5 font-inter border-b border-transparent before:inline-block before:border-white before:content-['Read More'] before:text-white before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5 relative">
-                        Ver video
-                      </span>
-                      <svg
-                        width="7"
-                        height="11"
-                        viewBox="0 0 7 11"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          className="transition-all duration-300 group-hover:stroke-white"
-                          d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
-                          stroke="#6D6D6D"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
+                      <Video className="text-masyp transition-all duration-300 group-hover:stroke-white" />
                     </div>
                   </button>
                   <button aria-label="share">

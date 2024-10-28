@@ -1,3 +1,4 @@
+"use client";
 import { ArrowUp, Facebook, Instagram, Youtube } from "lucide-react";
 import Link from "next/link";
 import React from "react";
@@ -54,7 +55,7 @@ const Footer = () => {
           <h1 className="font-semibold text-white text-18">Servicios</h1>
           <ul className="mt-3.5">
             <li className="">
-              <Link href="/project-details">
+              <Link href="#facturacion-electronica">
                 <div className="relative flex items-center gap-2 overflow-hidden font-medium transition-all duration-300 group text-white/50 hover:text-white hover:underline">
                   <svg
                     className="absolute transition-all duration-300 -left-2 group-hover:left-0"
@@ -79,7 +80,7 @@ const Footer = () => {
               </Link>
             </li>
             <li className="">
-              <Link href="/project-details">
+              <Link href="#liquidaciones-compra">
                 <div className="relative flex items-center gap-2 overflow-hidden font-medium transition-all duration-300 group text-white/50 hover:text-white hover:underline">
                   <svg
                     className="absolute transition-all duration-300 -left-2 group-hover:left-0"
@@ -104,7 +105,7 @@ const Footer = () => {
               </Link>
             </li>
             <li className="">
-              <Link href="/project-details">
+              <Link href="#sistema-guias-remision">
                 <div className="relative flex items-center gap-2 overflow-hidden font-medium transition-all duration-300 group text-white/50 hover:text-white hover:underline">
                   <svg
                     className="absolute transition-all duration-300 -left-2 group-hover:left-0"
@@ -129,7 +130,7 @@ const Footer = () => {
               </Link>
             </li>
             <li className="">
-              <a href="#">
+              <a href="#vps">
                 <div className="relative flex items-center gap-2 overflow-hidden font-medium transition-all duration-300 group text-white/50 hover:text-white hover:underline">
                   <svg
                     className="absolute transition-all duration-300 -left-2 group-hover:left-0"
@@ -154,7 +155,7 @@ const Footer = () => {
               </a>
             </li>
             <li className="">
-              <Link href="/project-details">
+              <Link href="#utilcon">
                 <div className="relative flex items-center gap-2 overflow-hidden font-medium transition-all duration-300 group text-white/50 hover:text-white hover:underline">
                   <svg
                     className="absolute transition-all duration-300 -left-2 group-hover:left-0"
@@ -179,7 +180,7 @@ const Footer = () => {
               </Link>
             </li>
             <li className="">
-              <Link href="/contact">
+              <Link href="#outsourcing-contable">
                 <div className="relative flex items-center gap-2 overflow-hidden font-medium transition-all duration-300 group text-white/50 hover:text-white hover:underline">
                   <svg
                     className="absolute transition-all duration-300 -left-2 group-hover:left-0"
@@ -204,7 +205,7 @@ const Footer = () => {
               </Link>
             </li>
             <li className="">
-              <Link href="/blog-details">
+              <Link href="#desarrollo-web">
                 <div className="relative flex items-center gap-2 overflow-hidden font-medium transition-all duration-300 group text-white/50 hover:text-white hover:underline">
                   <svg
                     className="absolute transition-all duration-300 -left-2 group-hover:left-0"

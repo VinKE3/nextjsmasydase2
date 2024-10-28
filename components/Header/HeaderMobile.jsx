@@ -138,7 +138,7 @@ const MobileHeader = () => {
                 Email : info@masydase.com
               </span>
             </a>
-            <Link href="/contact">
+            <Link href="contacto">
               <div className="home-two-btn-bg py-2.5 group bg-masyp border-masyp w-fit">
                 <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-masyp font-inter">
                   Contacto
