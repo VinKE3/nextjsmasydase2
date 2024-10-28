@@ -2,7 +2,7 @@ import React from "react";
 
 const Vps = () => {
   return (
-    <section className="py-[70px] md:py-[130px]">
+    <section id="vps" className="py-[70px] md:py-[130px]">
       <div className="mx-auto theme-container">
         <h1 className="px-5 bg-masyp/10 border border-masyp/20 text-masyp font-medium rounded-[30px] w-fit mx-auto">
           Servicios

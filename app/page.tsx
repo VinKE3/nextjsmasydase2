@@ -11,20 +11,22 @@ import DesarrolloWeb from "@/components/DesarrolloWeb/DesarrolloWeb";
 import Vps from "@/components/Vps/Vps";
 import Contacto from "@/components/Contacto/Contacto";
 import Partners from "@/components/Partners/Partners";
+import OutsourcinContable from "@/components/OutsourcingContable/OutsourcinContable";
 export default function Home() {
   return (
     <>
       <SmoothScrollHero />
       <ShuffleHero />
-      <Partners />
       <AboutOne />
       <FunFactOne />
+      <Partners />
       <Services />
       <Pricing />
       <LiquidacionesCompra />
       <GuiasRemision />
       <Vps />
       <Utilcon />
+      <OutsourcinContable />
       <DesarrolloWeb />
       <Contacto />
     </>

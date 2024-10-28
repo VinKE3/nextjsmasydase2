@@ -45,7 +45,7 @@ const GuiasRemision = () => {
   };
   return (
     <section
-      id="services"
+      id="sistema-guias-remision"
       className="w-full py-16 md:py-[130px] -top-2/4 bg-black-seo relative overflow-hidden"
     >
       <div className="relative z-10 w-full mx-auto theme-container">

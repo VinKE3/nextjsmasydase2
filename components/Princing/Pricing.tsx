@@ -4,7 +4,10 @@ import React from "react";
 
 const Pricing = () => {
   return (
-    <section id="pricing" className="bg-gray-50 pb-16 md:pb-[130px] pt-20">
+    <section
+      id="facturacion-electronica"
+      className="bg-gray-50 pb-16 md:pb-[130px] pt-20"
+    >
       <div className="w-full mx-auto theme-container">
         <div className="flex flex-col items-center w-full">
           <h1 className="px-5 bg-masyp/10 border border-masyp/20 text-masyp font-medium rounded-[30px] w-fit mx-auto">

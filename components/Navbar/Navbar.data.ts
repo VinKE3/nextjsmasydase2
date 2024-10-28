@@ -6,7 +6,7 @@ export const navItems = [
     subItems: [
       {
         name: "F. Electrónica",
-        href: "#facturacion-electrica",
+        href: "#facturacion-electronica",
         subItems: [
           { name: "Sistema Estándar", href: "#sistema-estandar" },
           { name: "Sistema a medida", href: "#sistema-medida" },

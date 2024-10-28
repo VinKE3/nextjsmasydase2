@@ -248,16 +248,16 @@ const Footer = () => {
                 ventas@masydase.com
               </a>
               <a
-                href="mailto:ventas@masydase.com"
+                href="mailto:soporte@masydase.com"
                 className="  text-white/50 hover:text-white hover:underline transition-all duration-300"
               >
-                ventas@masydase.com
+                soporte@masydase.com
               </a>
               <a
-                href="mailto:ventas@masydase.com"
+                href="mailto:info@masydase.com"
                 className="  text-white/50 hover:text-white hover:underline transition-all duration-300"
               >
-                ventas@masydase.com
+                info@masydase.com
               </a>
             </div>
             <div className="flex flex-col">

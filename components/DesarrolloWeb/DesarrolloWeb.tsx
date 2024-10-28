@@ -100,10 +100,10 @@ export const products = [
 
 const DesarrolloWeb = () => {
   return (
-    <div>
+    <section id="desarrollo-web">
       <HeroParallax products={products} />
       <ServicesDesarrolloWeb />
-    </div>
+    </section>
   );
 };
 

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Services = () => {
   return (
-    <section className="mb-20" id="features">
+    <section className="mb-20" id="servicios">
       <div className="mx-auto theme-container">
         <h1 className="px-5 bg-masyp/10 border border-masyp/20 text-masyp font-medium rounded-[30px] w-fit mx-auto">
           Nuestros Servicios
@@ -74,7 +74,7 @@ const Services = () => {
                 Outsourcing IT operations third part service provider
                 responsible for a businesss IT systems
               </p>
-              <Link href="/service-details">
+              <Link href="#facturacion-electronica">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-masyp group">
                   <span className="relative font-medium leading-5 border-b border-transparent font-inter before:inline-block before:border-masyp before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
                     Ver más
@@ -129,7 +129,7 @@ const Services = () => {
                 Providing service security audit penetration testing det
                 incident response, and security.
               </p>
-              <Link href="/service-details">
+              <Link href="#liquidaciones-compra">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-masyp group">
                   <span className="relative font-medium leading-5 border-b border-transparent font-inter before:inline-block before:border-masyp before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
                     Ver más
@@ -201,7 +201,7 @@ const Services = () => {
                 Offering solution data backup, disaster recovery planning data
                 restoration to prevent data.
               </p>
-              <Link href="/service-details">
+              <Link href="#sistema-guias-remision">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-masyp group">
                   <span className="relative font-medium leading-5 border-b border-transparent font-inter before:inline-block before:border-masyp before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
                     Ver más
@@ -269,7 +269,7 @@ const Services = () => {
                 Develop customs applications tailored specific business needs
                 including web applications
               </p>
-              <Link href="/service-details">
+              <Link href="#vps">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-masyp group">
                   <span className="relative font-medium leading-5 border-b border-transparent font-inter before:inline-block before:border-masyp before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
                     Ver Más
@@ -351,7 +351,7 @@ const Services = () => {
                 Develop customs applications tailored specific business needs
                 including web applications
               </p>
-              <Link href="/service-details">
+              <Link href="#utilcon">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-masyp group">
                   <span className="relative font-medium leading-5 border-b border-transparent font-inter before:inline-block before:border-masyp before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
                     Ver más
@@ -438,7 +438,7 @@ const Services = () => {
                 Providing service security audit penetration testing det
                 incident response, and security.
               </p>
-              <Link href="/service-details">
+              <Link href="#outsourcing-contable">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-masyp group">
                   <span className="relative font-medium leading-5 border-b border-transparent font-inter before:inline-block before:border-masyp before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
                     Ver más
@@ -493,7 +493,7 @@ const Services = () => {
                 Offering solution data backup, disaster recovery planning data
                 restoration to prevent data.
               </p>
-              <Link href="/service-details">
+              <Link href="#desarrollo-web">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-masyp group">
                   <span className="relative font-medium leading-5 border-b border-transparent font-inter before:inline-block before:border-masyp before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
                     Ver más

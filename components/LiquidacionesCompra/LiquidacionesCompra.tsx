@@ -16,7 +16,7 @@ const LiquidacionesCompra = () => {
     setIsOpen(false);
   };
   return (
-    <section className="mt-20 mb-20" id="about">
+    <section className="mt-20 mb-20" id="liquidaciones-compra">
       <div className="w-full mx-auto theme-container">
         <div className="grid grid-cols-6 xl:grid-cols-12 gap-y-10">
           <div className="col-span-6">

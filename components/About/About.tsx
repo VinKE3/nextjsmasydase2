@@ -28,7 +28,7 @@ const AboutOne: React.FC = () => {
   }, []);
 
   return (
-    <section id="home-one-about">
+    <section id="nosotros">
       <div className="home-one-about-wrapper w-full xl:pb-[153px] pb-[60px]">
         <div className="mx-auto theme-container">
           <div className="w-full grid xl:grid-cols-2 grid-cols-1 md:gap-[130px] gap-10 md:items-center relative">
