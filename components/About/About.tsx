@@ -19,7 +19,7 @@ const AboutOne: React.FC = () => {
   useEffect(() => {
     if (sceneRef.current) {
       const parallaxInstance = new Parallax(sceneRef.current);
-      console.log(parallaxInstance);
+
       // Cleanup the parallax instance on component unmount
       return () => {
         parallaxInstance.disable();
