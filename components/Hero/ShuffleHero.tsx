@@ -99,7 +99,7 @@ const generateSquares = () => {
     <motion.div
       key={sq.id}
       layout
-      transition={{ duration: 1.5, type: "spring" }}
+      transition={{ duration: 4.5, type: "spring" }}
       className="w-full h-full bg-cover"
       style={{
         backgroundImage: `url(${sq.src})`,

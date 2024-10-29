@@ -1458,32 +1458,35 @@ h6 {
 
 @-webkit-keyframes filter-animation {
   0% {
-    -webkit-filter: hue-rotate(30deg);
+    -webkit-filter: hue-rotate(10deg); /* Cambio sutil desde el azul */
   }
 
   50% {
-    -webkit-filter: hue-rotate(-120deg);
+    -webkit-filter: hue-rotate(
+      -10deg
+    ); /* Cambio hacia un tono más oscuro o más claro */
   }
 
   100% {
-    -webkit-filter: hue-rotate(30deg);
+    -webkit-filter: hue-rotate(10deg); /* Regresar al azul original */
   }
 }
 
 @keyframes filter-animation {
   0% {
-    filter: hue-rotate(30deg);
+    filter: hue-rotate(10deg); /* Cambio sutil desde el azul */
   }
 
   50% {
-    filter: hue-rotate(-120deg);
+    filter: hue-rotate(
+      -10deg
+    ); /* Cambio hacia un tono más oscuro o más claro */
   }
 
   100% {
-    filter: hue-rotate(30deg);
+    filter: hue-rotate(10deg); /* Regresar al azul original */
   }
 }
-
 /* home 9  */
 .h9-pagination .swiper-pagination-bullet {
   background: #c6fe1e;

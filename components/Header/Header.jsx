@@ -74,27 +74,30 @@ export default function DemoHeaderOne() {
                 <ul className="flex space-x-[15px] items-center mr-[55px]">
                   <li>
                     <a
-                      href="#"
+                      href="https://www.facebook.com/FacturacionElectronicaMasyDase/?locale=es_LA"
                       aria-label="facebook"
                       className="text-white opacity-50 hover:opacity-100"
+                      target="_blank"
                     >
                       <Facebook />
                     </a>
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="https://www.youtube.com/channel/UCu-Pqi2dKhzVKW7a2SpFJAA/videos"
                       aria-label="youtube"
                       className="text-white opacity-50 hover:opacity-100"
+                      target="_blank"
                     >
                       <Youtube />
                     </a>
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="https://www.instagram.com/masydase_/"
                       aria-label="instagram"
                       className="text-white opacity-50 hover:opacity-100"
+                      target="_blank"
                     >
                       <Instagram />
                     </a>

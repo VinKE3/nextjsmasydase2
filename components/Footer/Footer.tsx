@@ -20,7 +20,7 @@ const Footer = () => {
           </p>
           <div className="flex gap-[15px]">
             <a
-              href="#"
+              href="https://www.instagram.com/masydase_/"
               target="blank"
               aria-label="Facebook"
               className="w-[46px] h-[46px] rounded-full flex justify-center items-center border border-white/10 overflow-hidden relative before:inline-block before:absolute before:z-0 before:w-full before:h-full before:bg-masyp before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
@@ -30,7 +30,7 @@ const Footer = () => {
               </span>
             </a>
             <a
-              href="#"
+              href="https://www.youtube.com/channel/UCu-Pqi2dKhzVKW7a2SpFJAA/videos"
               target="blank"
               aria-label="Twitter"
               className="w-[46px] h-[46px] rounded-full flex justify-center items-center border border-white/10 overflow-hidden relative before:inline-block before:absolute before:z-0 before:w-full before:h-full before:bg-masyp  before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
@@ -40,7 +40,7 @@ const Footer = () => {
               </span>
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/masydase_/"
               target="blank"
               aria-label="Instagram"
               className="w-[46px] h-[46px] rounded-full flex justify-center items-center border border-white/10 overflow-hidden relative before:inline-block before:absolute before:z-0 before:w-full before:h-full before:bg-masyp  before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"

@@ -64,11 +64,7 @@ const Vps = () => {
             </div>
           </div>
           <div className="col-span-6 mt-5 lg:mt-0">
-            <img
-              src="/assets/images/home-eight/fratures_img.png"
-              alt=""
-              className=""
-            />
+            <img src="/assets/images/vps.jpg" alt="" className="" />
           </div>
         </div>
       </div>

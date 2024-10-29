@@ -29,7 +29,7 @@ const FunFactOne: React.FC = () => {
                 Nuestra empresa esta definida por el dinamismo digital y la
                 innovación tecnológica.
               </p>
-              <a href="#">
+              <a href="#servicios">
                 <div className="w-[182px] h-[56px] rounded-full border border-[#e7e3fa] flex justify-center items-center">
                   <div className="flex space-x-2.5 items-center text-masyp">
                     <span className="text-pone"> Ver Servicios </span>

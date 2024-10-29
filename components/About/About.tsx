@@ -5,6 +5,7 @@ import Link from "next/link";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import { ArrowRight, Check } from "lucide-react";
+
 const AboutOne: React.FC = () => {
   const sceneRef = useRef<HTMLDivElement | null>(null);
 
@@ -128,7 +129,7 @@ const AboutOne: React.FC = () => {
               </ul>
               <div className="flex justify-start items-center">
                 <Link
-                  href="/about"
+                  href="#contacto"
                   className="text-button inline-flex text-white justify-center items-center px-8 py-4 bg-black leading-none text-center hover:bg-masyp rounded-full transition-all"
                 >
                   Ver Servicios

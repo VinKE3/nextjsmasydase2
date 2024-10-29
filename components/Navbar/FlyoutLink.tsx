@@ -74,13 +74,13 @@ const PricingContent = () => {
         </Link>
         <Link
           href="#facturacion-electronica"
-          className="block text-md hover:underline"
+          className="block text-sm hover:underline"
         >
           Sistema Estándar
         </Link>
         <Link
           href="#facturacion-electronica"
-          className="block text-md hover:underline"
+          className="block text-sm hover:underline"
         >
           Sistema a Medida
         </Link>
@@ -102,13 +102,13 @@ const PricingContent = () => {
         </Link>
         <Link
           href="#sistema-guias-remision"
-          className="block text-md hover:underline"
+          className="block text-sm hover:underline"
         >
           Sistema web guías de transportista
         </Link>
         <Link
           href="#sistema-guias-remision"
-          className="block text-md hover:underline"
+          className="block text-sm hover:underline"
         >
           Sistema web guías de remisión
         </Link>
