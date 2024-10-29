@@ -12,7 +12,10 @@ const Services = () => {
         <h2 className="sm:text-48 text-24 font-semibold text-gray-500 mb-[32px] mt-[18px] w-full max-w-[795px] text-center mx-auto">
           Ofrecemos distintos servicios que te ayudaran a potenciar tu negocio
         </h2>
-        <div className="grid grid-cols-3 sm:grid-cols-6 lg:grid-cols-12 min-h-[303px] gap-[30px] mt-6 sm:mt-[70px]">
+        <div
+          data-aos="fade-right"
+          className="grid grid-cols-3 sm:grid-cols-6 lg:grid-cols-12 min-h-[303px] gap-[30px] mt-6 sm:mt-[70px]"
+        >
           <div className="col-span-3 flex items-center h-[246px] relative">
             <div className="group hover:absolute border border-masyp/10 px-[29px] py-[30px] rounded-2xl bg-white -right-0 h-[246px] hover:h-[290px] transition-all duration-300 hover:bg-masyp/5 overflow-hidden h5-story_slider_active_card">
               <div className="">

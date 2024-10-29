@@ -63,7 +63,7 @@ const Vps = () => {
               </p>
             </div>
           </div>
-          <div className="col-span-6 mt-5 lg:mt-0">
+          <div data-aos="fade-right" className="col-span-6 mt-5 lg:mt-0">
             <img src="/assets/images/vps.jpg" alt="" className="" />
           </div>
         </div>

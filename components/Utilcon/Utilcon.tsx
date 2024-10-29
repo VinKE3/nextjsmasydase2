@@ -272,7 +272,10 @@ const Utilcon = () => {
         </p>
       </div>
       {/* <!-- services --> */}
-      <div className="relative mt-10 md:mt-[70px] h-fit pb-16 md:pb-[130px]">
+      <div
+        data-aos="zoom-out"
+        className="relative mt-10 md:mt-[70px] h-fit pb-16 md:pb-[130px]"
+      >
         <div className="absolute top-0 z-0 w-full bg-white h-1/2"></div>
         <div className="absolute bottom-0 z-0 w-full h-1/2 bg-buisness-light-black"></div>
         <div className="relative z-10 w-full mx-auto theme-container">

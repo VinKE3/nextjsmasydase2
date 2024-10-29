@@ -108,7 +108,10 @@ const OutsourcinContable = () => {
           </ul>
         </div>
         <div className="col-span-6 mt-5 md:mt-0">
-          <div className="relative flex justify-end w-full">
+          <div
+            data-aos="fade-right"
+            className="relative flex justify-end w-full"
+          >
             <img src="/assets/images/file.webp" alt="" className="max-w-full" />
             <div className="bg-masyp p-4 sm:p-[30px] rounded-2xl absolute z-20 bottom-16 left-2 sm:left-0 w-48 sm:w-[295px]">
               <img

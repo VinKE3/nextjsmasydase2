@@ -112,7 +112,10 @@ const GuiasRemision = () => {
           >
             <SwiperSlide>
               {" "}
-              <div className="bg-white rounded-[20px] pt-7 pb-5 px-2.5 relative group overflow-hidden transition-all duration-300 before:inline-block before:w-[800px] before:h-[800px] before:rounded-full before:bg-masyp before:absolute before:z-0 z-10 before:-bottom-[800px] before:-right-[800px] before:transition-all before:duration-1000 hover:before:-bottom-[150px] hover:before:-right-[150px]">
+              <div
+                data-aos="fade-right"
+                className="bg-white rounded-[20px] pt-7 pb-5 px-2.5 relative group overflow-hidden transition-all duration-300 before:inline-block before:w-[800px] before:h-[800px] before:rounded-full before:bg-masyp before:absolute before:z-0 z-10 before:-bottom-[800px] before:-right-[800px] before:transition-all before:duration-1000 hover:before:-bottom-[150px] hover:before:-right-[150px]"
+              >
                 <div className="relative z-10 px-2 md:px-10">
                   <p className="font-semibold leading-6 transition-all duration-300 ease-in-out delay-300 text-masyp ">
                     Servicio
@@ -170,7 +173,10 @@ const GuiasRemision = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="bg-white rounded-[20px] pt-7 pb-5 px-2.5 relative group overflow-hidden transition-all duration-300 before:inline-block before:w-[800px] before:h-[800px] before:rounded-full before:bg-masyp before:absolute before:z-0 z-10 before:-bottom-[800px] before:-right-[800px] before:transition-all before:duration-1000 hover:before:-bottom-[150px] hover:before:-right-[150px]">
+              <div
+                data-aos="fade-left"
+                className="bg-white rounded-[20px] pt-7 pb-5 px-2.5 relative group overflow-hidden transition-all duration-300 before:inline-block before:w-[800px] before:h-[800px] before:rounded-full before:bg-masyp before:absolute before:z-0 z-10 before:-bottom-[800px] before:-right-[800px] before:transition-all before:duration-1000 hover:before:-bottom-[150px] hover:before:-right-[150px]"
+              >
                 <div className="relative z-10 px-2 md:px-10">
                   <p className="font-semibold leading-6 transition-all duration-300 ease-in-out delay-300 text-masyp ">
                     Servicio
