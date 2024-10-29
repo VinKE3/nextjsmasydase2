@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { ChevronRight } from "lucide-react";
 
 const Services = () => {
   return (
@@ -71,29 +72,15 @@ const Services = () => {
                 Facturación Electrónica
               </h1>
               <p className="text-paragraph line-clamp-3">
-                Outsourcing IT operations third part service provider
-                responsible for a businesss IT systems
+                Gestión y emisión de facturas electrónicas de forma rápida y
+                segura, cumpliendo con la normativa fiscal.
               </p>
               <Link href="#facturacion-electronica">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-masyp group">
                   <span className="relative font-medium leading-5 border-b border-transparent font-inter before:inline-block before:border-masyp before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
-                    Ver más
+                    Ver Servicio
                   </span>
-                  <svg
-                    width="7"
-                    height="11"
-                    viewBox="0 0 7 11"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
+                  <ChevronRight />
                 </div>
               </Link>
             </div>
@@ -126,29 +113,15 @@ const Services = () => {
                 Liquidaciones de compra
               </h1>
               <p className="text-paragraph line-clamp-3">
-                Providing service security audit penetration testing det
-                incident response, and security.
+                Servicio completo de auditoría, pruebas de seguridad y respuesta
+                ante incidentes para proteger tu negocio.
               </p>
               <Link href="#liquidaciones-compra">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-masyp group">
                   <span className="relative font-medium leading-5 border-b border-transparent font-inter before:inline-block before:border-masyp before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
-                    Ver más
+                    Ver servicio
                   </span>
-                  <svg
-                    width="7"
-                    height="11"
-                    viewBox="0 0 7 11"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
+                  <ChevronRight />
                 </div>
               </Link>
             </div>
@@ -198,29 +171,15 @@ const Services = () => {
                 Sistema Guías de remisión
               </h1>
               <p className="text-paragraph line-clamp-3">
-                Offering solution data backup, disaster recovery planning data
-                restoration to prevent data.
+                Solución para respaldo de datos y planes de recuperación ante
+                desastres para proteger información esencial.
               </p>
               <Link href="#sistema-guias-remision">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-masyp group">
                   <span className="relative font-medium leading-5 border-b border-transparent font-inter before:inline-block before:border-masyp before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
-                    Ver más
+                    Ver servicio
                   </span>
-                  <svg
-                    width="7"
-                    height="11"
-                    viewBox="0 0 7 11"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
+                  <ChevronRight />
                 </div>
               </Link>
             </div>
@@ -266,29 +225,15 @@ const Services = () => {
                 VPS
               </h1>
               <p className="text-paragraph line-clamp-3">
-                Develop customs applications tailored specific business needs
-                including web applications
+                Desarrollo de aplicaciones personalizadas que se adaptan a las
+                necesidades específicas de tu negocio.
               </p>
               <Link href="#vps">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-masyp group">
                   <span className="relative font-medium leading-5 border-b border-transparent font-inter before:inline-block before:border-masyp before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
-                    Ver Más
+                    Ver servicio
                   </span>
-                  <svg
-                    width="7"
-                    height="11"
-                    viewBox="0 0 7 11"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
+                  <ChevronRight />
                 </div>
               </Link>
             </div>
@@ -348,29 +293,15 @@ const Services = () => {
                 Utilcon
               </h1>
               <p className="text-paragraph line-clamp-3">
-                Develop customs applications tailored specific business needs
-                including web applications
+                Aplicaciones personalizadas para potenciar procesos, mejorando
+                la eficiencia y productividad empresarial.
               </p>
               <Link href="#utilcon">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-masyp group">
                   <span className="relative font-medium leading-5 border-b border-transparent font-inter before:inline-block before:border-masyp before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
-                    Ver más
+                    Ver servicio
                   </span>
-                  <svg
-                    width="7"
-                    height="11"
-                    viewBox="0 0 7 11"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
+                  <ChevronRight />
                 </div>
               </Link>
             </div>
@@ -435,29 +366,15 @@ const Services = () => {
                 Outsourcing Contable
               </h1>
               <p className="text-paragraph line-clamp-3">
-                Providing service security audit penetration testing det
-                incident response, and security.
+                Administración de sistemas IT, garantizando soporte y
+                mantenimiento especializado para operaciones empresariales.
               </p>
               <Link href="#outsourcing-contable">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-masyp group">
                   <span className="relative font-medium leading-5 border-b border-transparent font-inter before:inline-block before:border-masyp before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
-                    Ver más
+                    Ver servicio
                   </span>
-                  <svg
-                    width="7"
-                    height="11"
-                    viewBox="0 0 7 11"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
+                  <ChevronRight />
                 </div>
               </Link>
             </div>
@@ -490,29 +407,16 @@ const Services = () => {
                 Desarrollo Web
               </h1>
               <p className="text-paragraph line-clamp-3">
-                Offering solution data backup, disaster recovery planning data
-                restoration to prevent data.
+                Creación de páginas web modernas y responsivas, adaptadas a
+                todos los dispositivos para mejorar la experiencia del usuario y
+                potenciar la presencia en línea de tu negocio.
               </p>
               <Link href="#desarrollo-web">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-masyp group">
                   <span className="relative font-medium leading-5 border-b border-transparent font-inter before:inline-block before:border-masyp before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
-                    Ver más
+                    Ver servicio
                   </span>
-                  <svg
-                    width="7"
-                    height="11"
-                    viewBox="0 0 7 11"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
+                  <ChevronRight />
                 </div>
               </Link>
             </div>

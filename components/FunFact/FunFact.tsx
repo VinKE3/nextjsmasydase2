@@ -66,13 +66,7 @@ const FunFactOne: React.FC = () => {
                       Sistemas personalizados
                     </p>
                   </div>
-                  <div className="absolute top-0 left-0 w-full h-full transition-all duration-300 ease-in-out opacity-100 xl:opacity-0 group-hover:opacity-100">
-                    <img
-                      src="/assets/images/home-one-ff-item-shape.webp"
-                      className="w-full h-full"
-                      alt=""
-                    />
-                  </div>
+                  <div className="absolute top-0 left-0 w-full h-full transition-all duration-300 ease-in-out opacity-100 xl:opacity-0 group-hover:opacity-100 bg-gradient-to-br from-masyp/10 to-masyp/20 p-4 duration-[250ms] "></div>
                 </div>
               </div>
               <div className="xl:absolute left-0 bottom-5 rounded-[20px] w-[300px] h-[178px] border border-[#e7e3fa] bg-main-gray overflow-hidden group">
@@ -87,13 +81,7 @@ const FunFactOne: React.FC = () => {
                       Empresas nacionales
                     </p>
                   </div>
-                  <div className="absolute top-0 left-0 w-full h-full transition-all duration-300 ease-in-out opacity-100 xl:opacity-0 group-hover:opacity-100">
-                    <img
-                      src="/assets/images/home-one-ff-item-shape.webp"
-                      className="w-full h-full"
-                      alt=""
-                    />
-                  </div>
+                  <div className="absolute top-0 left-0 w-full h-full transition-all duration-300 ease-in-out opacity-100 xl:opacity-0 group-hover:opacity-100 bg-gradient-to-br from-masyp/10 to-masyp/20 p-4 duration-[250ms] "></div>
                 </div>
               </div>
               <div className="xl:absolute -right-12 bottom-20 rounded-[20px] w-[300px] h-[178px] border border-[#e7e3fa] bg-main-gray overflow-hidden group">
@@ -107,13 +95,7 @@ const FunFactOne: React.FC = () => {
                       Años de experiencia
                     </p>
                   </div>
-                  <div className="absolute top-0 left-0 w-full h-full transition-all duration-300 ease-in-out opacity-100 group-hover:opacity-100">
-                    <img
-                      src="/assets/images/home-one-ff-item-shape.webp"
-                      className="w-full h-full"
-                      alt=""
-                    />
-                  </div>
+                  <div className="absolute top-0 left-0 w-full h-full transition-all duration-300 ease-in-out opacity-100 group-hover:opacity-100 bg-gradient-to-br from-masyp/10 to-masyp/20 p-4 duration-[250ms] "></div>
                 </div>
               </div>
             </div>

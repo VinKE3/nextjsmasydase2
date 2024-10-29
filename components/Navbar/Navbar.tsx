@@ -12,7 +12,7 @@ export default function Navbar() {
             <div className="flex items-baseline ">
               <ul className="flex items-center justify-center space-x-10 px-4 py-2 text-md font-medium">
                 <li className="font-semibold text-paragraph  hover:text-masyp">
-                  <Link href="nosotros">Nosotros</Link>
+                  <Link href="#nosotros">Nosotros</Link>
                 </li>
                 <Example />
                 <li className="font-semibold text-paragraph  hover:text-masyp">
