@@ -197,7 +197,7 @@ const Contacto = () => {
               )}
               <textarea
                 placeholder="Consulta"
-                className="col-span-6 md:col-span-12 focus:outline-none border-b border-masyp/10 focus:border-masyp bg-transparent h-[83px]"
+                className="col-span-12 md:col-span-12 focus:outline-none border-b border-masyp/10 focus:border-masyp bg-transparent h-[83px]"
                 id="mensaje"
                 {...register("mensaje")}
               ></textarea>
