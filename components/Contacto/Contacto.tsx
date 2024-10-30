@@ -206,7 +206,7 @@ const Contacto = () => {
                   {errors.mensaje.message}
                 </span>
               )}
-              <div className="col-span-6 md:col-span-12">
+              <div className="col-span-12 md:col-span-12">
                 <button
                   type="submit"
                   className="home-two-btn-bg py-3 group bg-[#034281] border-[#034281] inline-flex"

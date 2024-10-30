@@ -57,7 +57,7 @@ const AboutOne: React.FC = () => {
                 >
                   <div className="flex justify-center w-full">
                     <img
-                      src="/assets/images/home-one-about-thumb-main.webp"
+                      src="/assets/images/about.jpg"
                       alt="About Main Thumbnail"
                       className="rounded-[20px] overflow-hidden"
                     />

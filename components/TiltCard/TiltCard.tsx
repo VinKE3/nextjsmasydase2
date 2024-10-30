@@ -59,7 +59,7 @@ const TiltCard: React.FC<TiltCardProps> = ({ icon, title, description }) => {
         transformStyle: "preserve-3d",
         transform,
       }}
-      className="relative h-80 w-96 rounded-xl bg-gradient-to-br from-masyp/50 to-masyp shadow-lg"
+      className="relative h-80 w-auto rounded-xl bg-gradient-to-br from-masyp/50 to-masyp shadow-lg"
     >
       <div
         style={{
