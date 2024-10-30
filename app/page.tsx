@@ -3,7 +3,7 @@ import AboutOne from "@/components/About/About";
 import ShuffleHero from "@/components/Hero/ShuffleHero";
 import FunFactOne from "@/components/FunFact/FunFact";
 import Services from "@/components/Services/Services";
-
+import Pricing from "@/components/Princing/Pricing";
 import LiquidacionesCompra from "@/components/LiquidacionesCompra/LiquidacionesCompra";
 import GuiasRemision from "@/components/GuiasRemision/GuiasRemision";
 import Utilcon from "@/components/Utilcon/Utilcon";
@@ -15,6 +15,7 @@ import OutsourcinContable from "@/components/OutsourcingContable/OutsourcinConta
 import Hero from "@/components/Hero/Hero";
 import { useEffect } from "react";
 import Aos from "aos";
+
 export default function Home() {
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -45,17 +46,17 @@ export default function Home() {
       </div>
       <ShuffleHero />
       <AboutOne />
-      {/* <FunFactOne /> */}
-      {/* <Partners /> */}
-      {/* <Services /> */}
-      {/* <Pricing /> */}
-      {/* <LiquidacionesCompra /> */}
-      {/* <GuiasRemision /> */}
-      {/* <Vps /> */}
-      {/* <Utilcon /> */}
-      {/* <OutsourcinContable /> */}
-      {/* <DesarrolloWeb /> */}
-      {/* <Contacto /> */}
+      <FunFactOne />
+      <Partners />
+      <Services />
+      <Pricing />
+      <LiquidacionesCompra />
+      <GuiasRemision />
+      <Vps />
+      <Utilcon />
+      <OutsourcinContable />
+      <DesarrolloWeb />
+      <Contacto />
     </>
   );
 }

@@ -53,7 +53,7 @@ const Contacto = () => {
   return (
     <section id="contacto" className="py-16 md:py-[130px]">
       <div className="theme-container w-full mx-auto grid grid-cols-7 lg:grid-cols-12 gap-y-16 lg:gap-y-0 lg:gap-x-[70px]">
-        <div data-aos="fade-right" className="col-span-7 lg:col-span-5">
+        <div data-aos="fade-up" className="col-span-7 lg:col-span-5">
           <h1 className="font-semibold text-main-black text-[35px]">
             Contactanos
           </h1>
@@ -158,7 +158,7 @@ const Contacto = () => {
             </a>
           </div>
         </div>
-        <div data-aos="fade-left" className="col-span-7">
+        <div data-aos="fade-down" className="col-span-7">
           <div className="border border-masyp/10 bg-main-gray rounded-[10px] p-4 md:p-[50px]">
             <ToastContainer />
             <h1 className="text-[30px] tracking-tight font-semibold text-main-black pb-6">
@@ -236,7 +236,6 @@ const Contacto = () => {
             </form>
           </div>
         </div>
-        {/* <!-- contact-form end  --> */}
       </div>
     </section>
   );

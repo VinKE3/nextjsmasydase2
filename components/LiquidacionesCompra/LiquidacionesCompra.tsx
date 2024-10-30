@@ -105,7 +105,7 @@ const LiquidacionesCompra = () => {
               className="relative z-10 hidden sm:block"
             /> */}
             <img
-              data-aos="fade-left"
+              data-aos="fade-down"
               data-aos-delay="100"
               src="./assets/images/liquidacionCompras/liqui2.png"
               alt=""

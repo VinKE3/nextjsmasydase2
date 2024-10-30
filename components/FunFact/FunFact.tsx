@@ -18,7 +18,7 @@ const FunFactOne: React.FC = () => {
       <div className="fun-fact-wrapper w-full xl:pb-[130px] pb-[60px]">
         <div className="mx-auto theme-container">
           <div className="grid xl:grid-cols-2 grid-cols-1 xl:gap-[155px]">
-            <div data-aos="fade-left" className="w-full">
+            <div data-aos="fade-up" className="w-full">
               <span className="mb-5 section-title-top-tag text-masyp">
                 Datos Empresa
               </span>
@@ -55,7 +55,7 @@ const FunFactOne: React.FC = () => {
               </a>
             </div>
             <div
-              data-aos="fade-right"
+              data-aos="fade-up"
               className="relative flex flex-wrap w-full gap-5 mt-10 xl:mt-0 xl:flex-none"
             >
               <div className="xl:absolute left-20 top-0 rounded-[20px] w-[300px] h-[178px] border border-[#e7e3fa] bg-main-gray overflow-hidden group">

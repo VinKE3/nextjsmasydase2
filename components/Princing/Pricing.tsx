@@ -24,7 +24,7 @@ const Pricing = () => {
         </div>
         <div className="grid gap-5 lg:gap-[70px] grid-cols-4 md:grid-cols-8 xl:grid-cols-12 mt-[70px] lg:px-8">
           <div
-            data-aos="zoom-out"
+            data-aos="fade-up"
             className="col-span-6 p-5 sm:p-10 lg:p-12 bg-white border border-transparent hover:border-white/20 rounded-[40px] transition-all duration-200 text-white h-fit"
           >
             <img
@@ -100,7 +100,7 @@ const Pricing = () => {
           </div>
 
           <div
-            data-aos="zoom-out"
+            data-aos="fade-down"
             className="col-span-6 p-5 sm:p-10 lg:p-12 bg-white border border-transparent hover:border-white/20 rounded-[40px] transition-all duration-200 text-white h-fit"
           >
             <img
