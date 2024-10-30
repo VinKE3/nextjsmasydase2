@@ -155,7 +155,7 @@ const Hero = () => {
               </div>
             </div>
             <img
-              src="./assets/images/home-nine/hero-img.png"
+              src="./assets/images/hero-img2.png"
               alt="img"
               className="relative self-end col-span-5 lg:absolute -right-16 -bottom-3 moving-h2-hero-main-img"
             />

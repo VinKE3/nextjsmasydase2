@@ -145,17 +145,17 @@ const LiquidacionesCompra = () => {
               {/* Modal */}
               {isOpen && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
-                  <div className="relative bg-white p-4 rounded-lg">
+                  <div className="relative bg-white p-4 rounded-lg max-w-7xl w-full h-[380px] md:h-[750px]">
                     <button
-                      className="absolute top-2 right-2 bg-red-500 rounded-xl"
+                      className="absolute top-2 right-2 bg-red-500 rounded-xl "
                       onClick={handleCloseModal}
                     >
                       <X className="text-white" />
                     </button>
-                    <div className="w-[750px] h-96">
+                    <div className="h-full w-full">
                       <iframe
                         className="w-full h-full"
-                        src="https://www.youtube-nocookie.com/embed/JdqL89ZZwFw?si=jnriuBsR3pv2EoUa"
+                        src="https://www.youtube.com/embed/nDh_A9q4ML8?si=GK0A6vGPGgCAg-5x"
                         title="Video"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

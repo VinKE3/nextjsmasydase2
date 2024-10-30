@@ -168,6 +168,17 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
     },
+    animation: {
+      scroll:
+        "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+    },
+    keyframes: {
+      scroll: {
+        to: {
+          transform: "translate(calc(-50% - 0.5rem))",
+        },
+      },
+    },
   },
   // eslint-disable-next-line @typescript-eslint/no-require-imports
   plugins: [require("tailwindcss-animate")],

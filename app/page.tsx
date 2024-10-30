@@ -10,9 +10,11 @@ import Utilcon from "@/components/Utilcon/Utilcon";
 import DesarrolloWeb from "@/components/DesarrolloWeb/DesarrolloWeb";
 import Vps from "@/components/Vps/Vps";
 import Contacto from "@/components/Contacto/Contacto";
-import Partners from "@/components/Partners/Partners";
+
+import { Partners2 } from "@/components/Partners/Partners2";
 import OutsourcinContable from "@/components/OutsourcingContable/OutsourcinContable";
 import Hero from "@/components/Hero/Hero";
+
 import { useEffect } from "react";
 import Aos from "aos";
 
@@ -47,7 +49,7 @@ export default function Home() {
       <ShuffleHero />
       <AboutOne />
       <FunFactOne />
-      <Partners />
+      <Partners2 />
       <Services />
       <Pricing />
       <LiquidacionesCompra />
