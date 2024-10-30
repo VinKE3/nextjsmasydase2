@@ -45,17 +45,17 @@ export default function Home() {
       </div>
       <ShuffleHero />
       <AboutOne />
-      <FunFactOne />
-      <Partners />
-      <Services />
+      {/* <FunFactOne /> */}
+      {/* <Partners /> */}
+      {/* <Services /> */}
       {/* <Pricing /> */}
-      <LiquidacionesCompra />
-      <GuiasRemision />
-      <Vps />
-      <Utilcon />
-      <OutsourcinContable />
-      <DesarrolloWeb />
-      <Contacto />
+      {/* <LiquidacionesCompra /> */}
+      {/* <GuiasRemision /> */}
+      {/* <Vps /> */}
+      {/* <Utilcon /> */}
+      {/* <OutsourcinContable /> */}
+      {/* <DesarrolloWeb /> */}
+      {/* <Contacto /> */}
     </>
   );
 }
