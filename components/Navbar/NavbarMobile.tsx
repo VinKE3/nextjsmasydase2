@@ -18,15 +18,24 @@ export default function NavbarMobile() {
   const NavItem = ({ item, depth = 0 }: { item: any; depth?: number }) => {
     const isOpen = openDropdowns.includes(item.name);
 
+    const handleItemClick = () => {
+      if (item.subItems) {
+        handleDropdownToggle(item.name);
+      }
+      if (item.href) {
+        window.location.href = item.href;
+      }
+    };
+
     return (
-      <div className={`relative w-full`}>
+      <div className="relative w-full">
         {item.subItems ? (
           <>
             <button
               className={`flex items-center justify-between w-full px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 ${
                 depth > 0 ? "pl-8" : ""
               }`}
-              onClick={() => handleDropdownToggle(item.name)}
+              onClick={handleItemClick}
             >
               {item.name}
               <ChevronDown
@@ -36,7 +45,7 @@ export default function NavbarMobile() {
               />
             </button>
             {isOpen && (
-              <div className={`pl-4`}>
+              <div className="pl-4">
                 {item.subItems.map((subItem: any, index: number) => (
                   <NavItem key={index} item={subItem} depth={depth + 1} />
                 ))}

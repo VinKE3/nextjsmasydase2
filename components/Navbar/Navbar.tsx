@@ -5,7 +5,7 @@ import Example from "./FlyoutLink";
 
 export default function Navbar() {
   return (
-    <nav className="bg-white shadow-md">
+    <nav className="">
       <div className="max-w-7xl mx-auto px-16">
         <div className="flex items-center">
           <div className="">
@@ -18,7 +18,6 @@ export default function Navbar() {
                 <li className="font-semibold text-paragraph  hover:text-masyp">
                   <Link href="#outsourcing-contable">Outsourcing Contable</Link>
                 </li>
-
                 <li className="font-semibold text-paragraph  hover:text-masyp">
                   <Link href="#desarrollo-web">Desarrollo Web</Link>
                 </li>

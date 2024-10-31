@@ -271,7 +271,7 @@ const Utilcon = () => {
           trabaja enterno red.
         </p>
       </div>
-      {/* <!-- services --> */}
+
       <div className="relative mt-10 md:mt-[70px] h-fit pb-16 md:pb-[130px]">
         <div className="absolute top-0 z-0 w-full bg-white h-1/2"></div>
         <div className="absolute bottom-0 z-0 w-full h-1/2 bg-buisness-light-black"></div>
@@ -296,7 +296,7 @@ const Utilcon = () => {
                 </button>
               ))}
             </div>
-            {/* <!-- elements  --> */}
+
             <div
               ref={mainTabSectionRef}
               className="max-w-full overflow-x-scroll flex transition-all duration-300 scroll-smooth relative no-scrollbar py-5 sm:py-10 md:py-[70px] main-tab-section w-full md:pl-7"
@@ -334,11 +334,7 @@ const Utilcon = () => {
                   <h1 className="text-20 sm:text-24 text-main-black font-semibold mt-4 md:mt-[50px]">
                     Provisión de Compras, Ventas, Honorarios y Bancos
                   </h1>
-                  {/* <p className="mt-4 text-paragraph md:mt-6">
-                    Simplifica tu contabilidad, ahorra tiempo y automatiza tus
-                    procesos. Provisiona ventas, compras, honorarios y bancos
-                    directamente con solo cargar un archivo Excel.
-                  </p> */}
+
                   <img
                     src="/assets/images/provisiones/provision.png"
                     alt=""
@@ -387,11 +383,7 @@ const Utilcon = () => {
                   <h1 className="text-20 sm:text-24 text-main-black font-semibold mt-4 md:mt-[50px]">
                     Cancelaciones Masivas de comprobantes
                   </h1>
-                  {/* <p className="mt-4 text-paragraph md:mt-6">
-                    Simplifica tu contabilidad, ahorra tiempo y automatiza tus
-                    procesos. Provisiona ventas, compras, honorarios y bancos
-                    directamente con solo cargar un archivo Excel.
-                  </p> */}
+
                   <img
                     src="/assets/images/cancelaciones/cancelaciones_2.png"
                     alt=""
@@ -440,11 +432,7 @@ const Utilcon = () => {
                   <h1 className="text-20 sm:text-24 text-main-black font-semibold mt-4 md:mt-[50px]">
                     Cancelaciones Masivas de comprobantes
                   </h1>
-                  {/* <p className="mt-4 text-paragraph md:mt-6">
-                    Simplifica tu contabilidad, ahorra tiempo y automatiza tus
-                    procesos. Provisiona ventas, compras, honorarios y bancos
-                    directamente con solo cargar un archivo Excel.
-                  </p> */}
+
                   <img
                     src="/assets/images/eliminarCompra/eliminar_comprobante.png"
                     alt=""
@@ -493,11 +481,7 @@ const Utilcon = () => {
                   <h1 className="text-20 sm:text-24 pb-3 text-main-black font-semibold mt-4 md:mt-[50px]">
                     Carga de anexos
                   </h1>
-                  {/* <p className="mt-4 text-paragraph md:mt-6">
-                    Simplifica tu contabilidad, ahorra tiempo y automatiza tus
-                    procesos. Provisiona ventas, compras, honorarios y bancos
-                    directamente con solo cargar un archivo Excel.
-                  </p> */}
+
                   <img
                     src="/assets/images/anexos/anexos2.png"
                     alt=""
@@ -543,20 +527,16 @@ const Utilcon = () => {
                   />
                 </svg>
                 <div className="relative z-10">
-                  <h1 className="text-24 text-main-black font-semibold mt-4 md:mt-[50px]">
-                    Elevating Your Presence through Strategic Marketing and
-                    Advertising Solutions
+                  <h1 className="text-20 sm:text-24 pb-3 text-main-black font-semibold mt-4 md:mt-[50px]">
+                    Tipo de Cambio
                   </h1>
-                  <p className="mt-4 text-paragraph md:mt-6">
-                    Agencies may offer services related to market research,
-                    branding, advertising campaigns, digital marketing, social
-                    media management, and content creation to help businesses
-                    promote
-                  </p>
+
                   <img
-                    src="/assets/images/home-five/hero/service-img.webp"
+                    src="/assets/images/utilcon/tipodecambio.png"
                     alt=""
-                    className="object-cover w-full mt-4 md:mt-14 rounded-2xl"
+                    className="object-cover  rounded-2xl"
+                    height={400}
+                    width={700}
                   />
                 </div>
                 <div className="absolute top-0 right-0 hidden md:block">
@@ -596,20 +576,16 @@ const Utilcon = () => {
                   />
                 </svg>
                 <div className="relative z-10">
-                  <h1 className="text-24 text-main-black font-semibold mt-4 md:mt-[50px]">
-                    Elevating Your Presence through Strategic Marketing and
-                    Advertising Solutions
+                  <h1 className="text-20 sm:text-24 pb-3 text-main-black font-semibold mt-4 md:mt-[50px]">
+                    Valida Comprobantes
                   </h1>
-                  <p className="mt-4 text-paragraph md:mt-6">
-                    Agencies may offer services related to market research,
-                    branding, advertising campaigns, digital marketing, social
-                    media management, and content creation to help businesses
-                    promote
-                  </p>
+
                   <img
-                    src="/assets/images/home-five/hero/service-img.webp"
+                    src="/assets/images/utilcon/validar.png"
                     alt=""
-                    className="object-cover w-full mt-4 md:mt-14 rounded-2xl"
+                    className="object-cover  rounded-2xl"
+                    height={400}
+                    width={700}
                   />
                 </div>
                 <div className="absolute top-0 right-0 hidden md:block">
@@ -649,20 +625,16 @@ const Utilcon = () => {
                   />
                 </svg>
                 <div className="relative z-10">
-                  <h1 className="text-24 text-main-black font-semibold mt-4 md:mt-[50px]">
-                    Elevating Your Presence through Strategic Marketing and
-                    Advertising Solutions
+                  <h1 className="text-20 sm:text-24 pb-3 text-main-black font-semibold mt-4 md:mt-[50px]">
+                    Eliminar empresas y periodos
                   </h1>
-                  <p className="mt-4 text-paragraph md:mt-6">
-                    Agencies may offer services related to market research,
-                    branding, advertising campaigns, digital marketing, social
-                    media management, and content creation to help businesses
-                    promote
-                  </p>
+
                   <img
-                    src="/assets/images/home-five/hero/service-img.webp"
+                    src="/assets/images/utilcon/eliminarempresa.png"
                     alt=""
-                    className="object-cover w-full mt-4 md:mt-14 rounded-2xl"
+                    className="object-cover  rounded-2xl"
+                    height={400}
+                    width={700}
                   />
                 </div>
                 <div className="absolute top-0 right-0 hidden md:block">
