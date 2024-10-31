@@ -257,7 +257,6 @@ const Utilcon = () => {
 
   return (
     <section id="utilcon" className="pt-16 md:pt-[130px] ">
-      {/* <!-- title  --> */}
       <div className="flex flex-col items-center mx-auto theme-container">
         <h1 className="border text-main-black border-masyp/10 py-0.5 px-5 rounded-[30px] w-fit bg-masyp/5 font-medium">
           Servicios
