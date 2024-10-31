@@ -109,7 +109,7 @@ const LiquidacionesCompra = () => {
               data-aos-delay="100"
               src="./assets/images/liquidacionCompras/liqui2.png"
               alt=""
-              className="relative z-10"
+              className="relative z-10 h-[600px] w-[600px]"
             />
             <div className="bg-masyp p-[30px] rounded-2xl absolute z-20 bottom-8 w-[295px]">
               <button

@@ -19,13 +19,13 @@ export function Partners2() {
             speed="slow"
           />
         </div>
-        <div className="rounded-md flex flex-col antialiased  dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+        {/* <div className="rounded-md flex flex-col antialiased  dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
           <InfiniteMovingCards
             items={dataPartners}
             direction="left"
             speed="slow"
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );
