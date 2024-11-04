@@ -50,3 +50,56 @@ export const dataPartners = [
     altText: "OR",
   },
 ];
+
+export const dataPartnersLeft = [
+  {
+    id: 1,
+    imgSrc: "/assets/images/partners/ANLUVET.png",
+    altText: "ANLUVET",
+  },
+  {
+    id: 2,
+    imgSrc: "/assets/images/partners/AVICOLAPAYTAN.png",
+    altText: "AVICOLAPAYTAN",
+  },
+  {
+    id: 3,
+    imgSrc: "/assets/images/partners/KAITA.png",
+    altText: "KAITA",
+  },
+  {
+    id: 4,
+    imgSrc: "/assets/images/partners/KRYCEL.png",
+    altText: "KRYCEL",
+  },
+  {
+    id: 5,
+    imgSrc: "/assets/images/partners/MULTIGRACE.png",
+    altText: "MULTIGRACE",
+  },
+  {
+    id: 6,
+    imgSrc: "/assets/images/partners/MYM.png",
+    altText: "MYM",
+  },
+  {
+    id: 7,
+    imgSrc: "/assets/images/partners/NEGORYR.png",
+    altText: "NEGORYR",
+  },
+  {
+    id: 8,
+    imgSrc: "/assets/images/partners/NORSALUD.png",
+    altText: "NORSALUD",
+  },
+  {
+    id: 9,
+    imgSrc: "/assets/images/partners/SNATURAL.png",
+    altText: "SNATURAL",
+  },
+  {
+    id: 10,
+    imgSrc: "/assets/images/partners/WARMI.png",
+    altText: "WARMI",
+  },
+];

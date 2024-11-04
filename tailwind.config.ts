@@ -147,7 +147,7 @@ const config: Config = {
         },
       },
       boxShadow: {
-        common: "0px 10px 60px 0px rgba(121, 74, 255, 0.2)",
+        common: "0px 10px 60px 0px rgba(3, 66, 129, 0.2)",
         small: "0px 10px 20px -8px rgba(121, 74, 255, 0.3)",
         "business-red": "0px 10px 60px 0px #D90A2C80",
         "business-red-sm": "0px 16px 32px 0px #D90A2C4D",

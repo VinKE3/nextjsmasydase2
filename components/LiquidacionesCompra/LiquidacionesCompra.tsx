@@ -1,5 +1,5 @@
 "use client";
-import { X } from "lucide-react";
+import { Book, Video, X } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -98,12 +98,7 @@ const LiquidacionesCompra = () => {
                 strokeWidth="1.2"
               />
             </svg>
-            {/* <img
-              data-aos="fade-left"
-              src="./assets/images/liquidacionCompras/liqui2.png"
-              alt=""
-              className="relative z-10 hidden sm:block"
-            /> */}
+
             <img
               data-aos="fade-down"
               data-aos-delay="100"
@@ -111,35 +106,26 @@ const LiquidacionesCompra = () => {
               alt=""
               className="relative z-10 h-[600px] w-[600px]"
             />
-            <div className="bg-masyp p-[30px] rounded-2xl absolute z-20 bottom-8 w-[295px]">
-              <button
-                onClick={handleOpenModal}
-                aria-label="play-video"
+            <div className="bg-masyp p-[30px] rounded-2xl absolute z-20 bottom-8 md:w-[220px] sm:w-[250px]">
+              <a
+                href="https://drive.google.com/file/d/1ftZCgCH1VYkWewQ1p4EO1Viyp12QnuIk/view" // Cambia esto por la ruta de tu PDF
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="ver-pdf"
                 className="flex items-center space-x-8 video-play-btn ml-7 sm:ml-0"
               >
                 <span className="flex size-11 sm:size-[56px] rounded-full justify-center items-center bg-white relative">
                   <span>
-                    <svg
-                      width="12"
-                      height="14"
-                      viewBox="0 0 12 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.9611 8.29308L2.99228 12.8467C1.65896 13.6086 0 12.6459 0 11.1102V2.00295C0 0.467309 1.65896 -0.495425 2.99228 0.266469L10.9611 4.82011C12.3048 5.5879 12.3048 7.52529 10.9611 8.29308Z"
-                        fill="#034281"
-                      />
-                    </svg>
+                    <Book className="text-masyp" />
                   </span>
                   <div className="absolute w-full h-full rounded-full h5-play-btn-line1"></div>
                   <div className="absolute w-[130%] h-[130%] rounded-full h5-play-btn-line2"></div>
                   <div className="absolute w-[160%] h-[160%] rounded-full h5-play-btn-line3"></div>
                 </span>
                 <span className="font-semibold text-white border-b border-white">
-                  ¿Como Funciona?
+                  Ver PDF
                 </span>
-              </button>
+              </a>
             </div>
             <div className="relative">
               {/* Modal */}

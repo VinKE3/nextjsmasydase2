@@ -1,8 +1,24 @@
-import { Check } from "lucide-react";
+import { Check, Video, X } from "lucide-react";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const Pricing = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen2, setIsOpen2] = useState(false);
+  // Función para abrir el modal
+  const handleOpenModal = () => {
+    setIsOpen(true);
+  };
+  const handleOpenModal2 = () => {
+    setIsOpen2(true);
+  };
+  // Función para cerrar el modal
+  const handleCloseModal = () => {
+    setIsOpen(false);
+  };
+  const handleCloseModal2 = () => {
+    setIsOpen2(false);
+  };
   return (
     <section
       id="facturacion-electronica"
@@ -73,30 +89,40 @@ const Pricing = () => {
               </li>
             </ul>
 
-            <Link href="#contacto">
-              <div className="home-two-btn-bg mt-10 group bg-masyp border-masyp py-3 sm:py-[15px]">
-                <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-masyp font-inter">
-                  Contratar Servicio
-                </span>
-                <svg
-                  className="relative z-10"
-                  width="7"
-                  height="12"
-                  viewBox="0 0 7 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    className="transition-all duration-300 group-hover:stroke-masyp stroke-white"
-                    d="M1.10254 10.5L4.89543 6.70711C5.22877 6.37377 5.39543 6.20711 5.39543 6C5.39543 5.79289 5.22877 5.62623 4.89543 5.29289L1.10254 1.5"
-                    stroke="white"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
-            </Link>
+            <div className="flex flex-col md:flex-row items-start md:items-center justify-between">
+              <Link href="#contacto">
+                <div className="home-two-btn-bg mt-10 group bg-masyp border-masyp py-3 sm:py-[15px]">
+                  <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-masyp font-inter">
+                    Contratar Servicio
+                  </span>
+                  <svg
+                    className="relative z-10"
+                    width="7"
+                    height="12"
+                    viewBox="0 0 7 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      className="transition-all duration-300 group-hover:stroke-masyp stroke-white"
+                      d="M1.10254 10.5L4.89543 6.70711C5.22877 6.37377 5.39543 6.20711 5.39543 6C5.39543 5.79289 5.22877 5.62623 4.89543 5.29289L1.10254 1.5"
+                      stroke="white"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+              </Link>
+              <button onClick={handleOpenModal} aria-label="play-video">
+                <div className="home-two-btn-bg mt-10 group bg-masyp border-masyp py-3 sm:py-[15px]">
+                  <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-masyp font-inter">
+                    Video Demo
+                  </span>
+                  <Video className="relative z-10 transition-all duration-300 group-hover:stroke-masyp stroke-white" />
+                </div>
+              </button>
+            </div>
           </div>
 
           <div
@@ -104,7 +130,7 @@ const Pricing = () => {
             className="col-span-6 p-5 sm:p-10 lg:p-12 bg-white border border-transparent hover:border-white/20 rounded-[40px] transition-all duration-200 text-white h-fit"
           >
             <img
-              src="/assets/images/factura/standar.jpg"
+              src="/assets/images/factura/medida.jpg"
               alt="Pricing Title"
               width={300}
               height={100}
@@ -152,57 +178,88 @@ const Pricing = () => {
                 <span className="text-paragraph">Exclusividad de uso.</span>
               </li>
             </ul>
-            {/* <Link href="/pricing">
-              <div className="mt-10 flex justify-center gap-2 px-5 sm:px-10 py-[11px] rounded-[40px] bg-masyp items-center overflow-hidden relative before:block before:w-[300px] before:h-[300px] before:absolute before:bg-white/5 before:-top-[100px] before:rotate-45 hover:before:-top-[400px] transition-all duration-300 before:transition-all before:duration-1000 before:z-0 z-10 text-masyp hover:text-masyp after:block after:w-[300px] after:h-[300px] after:absolute after:bg-white/50 after:-bottom-[100px] after:rotate-45 hover:after:-bottom-[400px] after:transition-all after:duration-1000 after:z-0 group">
-                <span className="relative z-10 py-1 text-base font-semibold transition-all duration-300 group-hover:text-white font-inter">
-                  Contratar Servicio
-                </span>
-                <svg
-                  className="relative z-10"
-                  width="7"
-                  height="12"
-                  viewBox="0 0 7 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    className="transition-all duration-300 group-hover:stroke-white stroke-masyp"
-                    d="M1.10254 10.5L4.89543 6.70711C5.22877 6.37377 5.39543 6.20711 5.39543 6C5.39543 5.79289 5.22877 5.62623 4.89543 5.29289L1.10254 1.5"
-                    stroke="white"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
-            </Link> */}
-            <Link href="#contacto">
-              <div className="home-two-btn-bg mt-10 group bg-masyp border-masyp py-3 sm:py-[15px]">
-                <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-masyp font-inter">
-                  Contratar Servicio
-                </span>
-                <svg
-                  className="relative z-10"
-                  width="7"
-                  height="12"
-                  viewBox="0 0 7 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    className="transition-all duration-300 group-hover:stroke-masyp stroke-white"
-                    d="M1.10254 10.5L4.89543 6.70711C5.22877 6.37377 5.39543 6.20711 5.39543 6C5.39543 5.79289 5.22877 5.62623 4.89543 5.29289L1.10254 1.5"
-                    stroke="white"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
-            </Link>
+            <div className="flex flex-col md:flex-row items-start md:items-center justify-between">
+              <Link href="#contacto">
+                <div className="home-two-btn-bg mt-10 group bg-masyp border-masyp py-3 sm:py-[15px]">
+                  <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-masyp font-inter">
+                    Contratar Servicio
+                  </span>
+                  <svg
+                    className="relative z-10"
+                    width="7"
+                    height="12"
+                    viewBox="0 0 7 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      className="transition-all duration-300 group-hover:stroke-masyp stroke-white"
+                      d="M1.10254 10.5L4.89543 6.70711C5.22877 6.37377 5.39543 6.20711 5.39543 6C5.39543 5.79289 5.22877 5.62623 4.89543 5.29289L1.10254 1.5"
+                      stroke="white"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+              </Link>
+              <button onClick={handleOpenModal2} aria-label="play-video">
+                <div className="home-two-btn-bg mt-10 group bg-masyp border-masyp py-3 sm:py-[15px]">
+                  <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-masyp font-inter">
+                    Video Demo
+                  </span>
+                  <Video className="relative z-10 transition-all duration-300 group-hover:stroke-masyp stroke-white" />
+                </div>
+              </button>
+            </div>
           </div>
         </div>
       </div>
+      {/* Modal */}
+      {isOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
+          <div className="relative bg-white p-4 rounded-lg max-w-7xl w-full h-[380px] md:h-[750px]">
+            <button
+              className="absolute top-2 right-2 bg-red-500 rounded-xl"
+              onClick={handleCloseModal}
+            >
+              <X className="text-white" />
+            </button>
+            <div className="h-full w-full">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/1dHIVmfoAYo?si=DLQeF-G73MEWSlqx"
+                title="Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      )}
+      {isOpen2 && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
+          <div className="relative bg-white p-4 rounded-lg max-w-7xl w-full h-[380px] md:h-[750px]">
+            <button
+              className="absolute top-2 right-2 bg-red-500 rounded-xl"
+              onClick={handleCloseModal2}
+            >
+              <X className="text-white" />
+            </button>
+            <div className="h-full w-full">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/Kem-j1OLBwE?si=1PzdckpWPBzkBh13"
+                title="Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

@@ -153,7 +153,6 @@ const OutsourcinContable = () => {
         </div>
       </div>
       <div className="mt-20">
-        <BouncyCardsFeatures />
         <OutsourcingServices />
       </div>
     </section>

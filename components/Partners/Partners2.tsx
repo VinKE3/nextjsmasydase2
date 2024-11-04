@@ -1,7 +1,7 @@
 "use client";
 import "swiper/css";
 
-import { dataPartners } from "./Partners.data";
+import { dataPartners, dataPartnersLeft } from "./Partners.data";
 
 import { InfiniteMovingCards } from "../InfiniteMoving/infinite-moving-cards";
 
@@ -19,13 +19,13 @@ export function Partners2() {
             speed="slow"
           />
         </div>
-        {/* <div className="rounded-md flex flex-col antialiased  dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+        <div className="rounded-md flex flex-col antialiased  dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
           <InfiniteMovingCards
-            items={dataPartners}
+            items={dataPartnersLeft}
             direction="left"
             speed="slow"
           />
-        </div> */}
+        </div>
       </div>
     </section>
   );

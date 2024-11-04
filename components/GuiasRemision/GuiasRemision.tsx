@@ -5,15 +5,20 @@ import { Navigation } from "swiper/modules";
 import { Video, X } from "lucide-react";
 const GuiasRemision = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const [isOpen2, setIsOpen2] = useState(false);
   // Función para abrir el modal
   const handleOpenModal = () => {
     setIsOpen(true);
   };
-
+  const handleOpenModal2 = () => {
+    setIsOpen2(true);
+  };
   // Función para cerrar el modal
   const handleCloseModal = () => {
     setIsOpen(false);
+  };
+  const handleCloseModal2 = () => {
+    setIsOpen2(false);
   };
   const swiperOptions = {
     modules: [Navigation],
@@ -127,13 +132,13 @@ const GuiasRemision = () => {
                   </a>
                 </div>
                 <img
-                  src="./assets/images/anexos/anexos2.png"
+                  src="./assets/images/guias/grRemitente.png"
                   alt=""
                   className="max-w-full w-full rounded-2xl mt-10 relative z-10 p-2"
                 />
                 <div className="relative z-10 flex justify-between px-10 mt-4">
                   <button
-                    onClick={handleOpenModal}
+                    onClick={handleOpenModal2}
                     aria-label="play-video"
                     className="flex items-center space-x-8 video-play-btn ml-7 sm:ml-0"
                   >
@@ -188,7 +193,7 @@ const GuiasRemision = () => {
                   </a>
                 </div>
                 <img
-                  src="./assets/images/anexos/anexos2.png"
+                  src="./assets/images/guias/grTransportista.png"
                   alt=""
                   className="max-w-full w-full rounded-2xl mt-10 relative z-10 p-2"
                 />
@@ -239,17 +244,39 @@ const GuiasRemision = () => {
       {/* Modal */}
       {isOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
-          <div className="relative bg-white p-4 rounded-lg">
+          <div className="relative bg-white p-4 rounded-lg max-w-7xl w-full h-[380px] md:h-[750px]">
             <button
               className="absolute top-2 right-2 bg-red-500 rounded-xl"
               onClick={handleCloseModal}
             >
               <X className="text-white" />
             </button>
-            <div className="w-[750px] h-96">
+            <div className="h-full w-full">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube-nocookie.com/embed/JdqL89ZZwFw?si=jnriuBsR3pv2EoUa"
+                src="https://www.youtube.com/embed/UFaPYZ7AW1A?si=8HacbOIj6oNuqCU2"
+                title="Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      )}
+      {isOpen2 && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
+          <div className="relative bg-white p-4 rounded-lg max-w-7xl w-full h-[380px] md:h-[750px]">
+            <button
+              className="absolute top-2 right-2 bg-red-500 rounded-xl"
+              onClick={handleCloseModal2}
+            >
+              <X className="text-white" />
+            </button>
+            <div className="h-full w-full">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/nDh_A9q4ML8?si=rtEkF0t4BVCgK0PC"
                 title="Video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
