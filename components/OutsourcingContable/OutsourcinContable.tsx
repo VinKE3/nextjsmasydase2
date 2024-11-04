@@ -1,6 +1,5 @@
 import React from "react";
 
-import { BouncyCardsFeatures } from "../BouncyCardsFeatures/BouncyCardsFeatures";
 import OutsourcingServices from "./OutsourcingServices";
 
 const OutsourcinContable = () => {

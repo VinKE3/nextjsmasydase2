@@ -1,20 +1,9 @@
 "use client";
-import { Book, Video, X } from "lucide-react";
+import { Book } from "lucide-react";
 import Link from "next/link";
-import React, { useState } from "react";
+import React from "react";
 
 const LiquidacionesCompra = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  // Función para abrir el modal
-  const handleOpenModal = () => {
-    setIsOpen(true);
-  };
-
-  // Función para cerrar el modal
-  const handleCloseModal = () => {
-    setIsOpen(false);
-  };
   return (
     <section className="mt-20 mb-20" id="liquidaciones-compra">
       <div className="w-full mx-auto theme-container">
@@ -126,31 +115,6 @@ const LiquidacionesCompra = () => {
                   Ver PDF
                 </span>
               </a>
-            </div>
-            <div className="relative">
-              {/* Modal */}
-              {isOpen && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
-                  <div className="relative bg-white p-4 rounded-lg max-w-7xl w-full h-[380px] md:h-[750px]">
-                    <button
-                      className="absolute top-2 right-2 bg-red-500 rounded-xl "
-                      onClick={handleCloseModal}
-                    >
-                      <X className="text-white" />
-                    </button>
-                    <div className="h-full w-full">
-                      <iframe
-                        className="w-full h-full"
-                        src="https://www.youtube.com/embed/nDh_A9q4ML8?si=GK0A6vGPGgCAg-5x"
-                        title="Video"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      ></iframe>
-                    </div>
-                  </div>
-                </div>
-              )}
             </div>
           </div>
         </div>
