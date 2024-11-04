@@ -1,6 +1,7 @@
 import React from "react";
 
 import { BouncyCardsFeatures } from "../BouncyCardsFeatures/BouncyCardsFeatures";
+import OutsourcingServices from "./OutsourcingServices";
 
 const OutsourcinContable = () => {
   return (
@@ -145,7 +146,7 @@ const OutsourcinContable = () => {
                 data-type-qs="+ Years of Experience"
                 data-speed-qs="1000"
               >
-                + 15 años de experiencia
+                + 5 años de experiencia
               </h1>
             </div>
           </div>
@@ -153,6 +154,7 @@ const OutsourcinContable = () => {
       </div>
       <div className="mt-20">
         <BouncyCardsFeatures />
+        <OutsourcingServices />
       </div>
     </section>
   );

@@ -9,6 +9,7 @@ import {
   ShieldCheck,
   TabletSmartphone,
 } from "lucide-react";
+import { Cover } from "@/components/ui/cover";
 
 const ServicesDesarrolloWeb = () => {
   return (
@@ -22,7 +23,7 @@ const ServicesDesarrolloWeb = () => {
             Servicios Desarrollo Web
           </h1>
           <h2 className="pt-5 font-semibold text-center text-black text-24 sm:text-48">
-            Servicios creativos para hacer crecer su negocio
+            Cree su sitio web perfecto <Cover>super optimizado</Cover>
           </h2>
         </div>
         <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-x-4 md:gap-x-8 gap-y-[30px] mt-10 md:mt-[70px]">
