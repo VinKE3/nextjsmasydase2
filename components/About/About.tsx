@@ -30,7 +30,7 @@ const AboutOne: React.FC = () => {
 
   return (
     <section id="nosotros">
-      <div className="home-one-about-wrapper w-full xl:pb-[153px] pb-[60px]">
+      <div className="home-one-about-wrapper w-full xl:pb-[153px] pb-[60px] xl:pt-[153px] pt-[60px]">
         <div className="mx-auto theme-container">
           <div className="w-full grid xl:grid-cols-2 grid-cols-1 md:gap-[130px] gap-10 md:items-center relative">
             <div className="w-full about-thumbnil-area">
@@ -124,7 +124,7 @@ const AboutOne: React.FC = () => {
                 </li>
                 <li className="flex space-x-2.5 items-center text-masyp font-medium px-5 py-3 bg-main-gray border border-[#e7e3fa] leading-none rounded-full">
                   <Check />
-                  <span>Soporte Técnico</span>
+                  <span>Seg</span>
                 </li>
               </ul>
               <div className="flex justify-start items-center">

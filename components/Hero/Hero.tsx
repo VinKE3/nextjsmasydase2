@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       id="banner"
-      className="relative flex justify-center w-full overflow-hidden bg-white"
+      className="relative flex justify-center w-full overflow-hidden bg-white pt-16"
     >
       <div className="relative w-full overflow-hidden bg-[#10100E] ">
         <img

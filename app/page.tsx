@@ -1,6 +1,6 @@
 "use client";
 import AboutOne from "@/components/About/About";
-import ShuffleHero from "@/components/Hero/ShuffleHero";
+// import ShuffleHero from "@/components/Hero/ShuffleHero";
 import FunFactOne from "@/components/FunFact/FunFact";
 import Services from "@/components/Services/Services";
 import Pricing from "@/components/Princing/Pricing";
@@ -10,11 +10,9 @@ import Utilcon from "@/components/Utilcon/Utilcon";
 import DesarrolloWeb from "@/components/DesarrolloWeb/DesarrolloWeb";
 import Vps from "@/components/Vps/Vps";
 import Contacto from "@/components/Contacto/Contacto";
-
 import { Partners2 } from "@/components/Partners/Partners2";
 import OutsourcinContable from "@/components/OutsourcingContable/OutsourcinContable";
 import Hero from "@/components/Hero/Hero";
-
 import { useEffect } from "react";
 import Aos from "aos";
 
@@ -43,10 +41,8 @@ export default function Home() {
   }, []);
   return (
     <>
-      <div className="pt-16">
-        <Hero />
-      </div>
-      <ShuffleHero />
+      <Hero />
+      {/* <ShuffleHero /> */}
       <AboutOne />
       <FunFactOne />
       <Partners2 />
