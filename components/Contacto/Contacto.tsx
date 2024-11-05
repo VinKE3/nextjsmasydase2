@@ -1,5 +1,12 @@
 "use client";
-import { Facebook, Globe, Instagram, MailCheck, Youtube } from "lucide-react";
+import {
+  Facebook,
+  Globe,
+  Instagram,
+  MailCheck,
+  PhoneCall,
+  Youtube,
+} from "lucide-react";
 import React, { useEffect } from "react";
 import { sendEmail } from "@/actions/sendEmail";
 import { toast, ToastContainer } from "react-toastify";
@@ -56,7 +63,7 @@ const Contacto = () => {
       <div className="theme-container w-full mx-auto grid grid-cols-7 lg:grid-cols-12 gap-y-16 lg:gap-y-0 lg:gap-x-[70px]">
         <div data-aos="fade-up" className="col-span-7 lg:col-span-5">
           <h1 className="font-semibold text-main-black text-[35px]">
-            Contactanos
+            Contáctanos
           </h1>
           <p className="text-paragraph mt-[30px]">
             Estamos aquí para depejar tus dudas sobre todos nuestros servicios,
@@ -73,14 +80,10 @@ const Contacto = () => {
               <p className="max-w-[209px] text-paragraph mt-5">
                 Villa el Salvador, Sec. 3 Grupo 13 Mza. C Lote. 9
               </p>
-              <NeuButton
-                text="Ver en Maps"
-                href="https://maps.app.goo.gl/cPAfPhYRKznGPusJ9"
-              />
             </div>
             <div className="col-span-1">
               <h1 className="flex gap-2.5">
-                <MailCheck className="text-masyp h-[30px] w-[25px]" />
+                <PhoneCall className="text-masyp h-[30px] w-[25px]" />
                 <span className="font-medium font-inter text-22 text-main-black">
                   Información
                 </span>
@@ -88,40 +91,22 @@ const Contacto = () => {
               <div className="flex flex-col">
                 {" "}
                 <a
-                  href="mailto:ventas@masydase.com"
-                  className=" text-paragraph hover:text-masyp hover:underline transition-all duration-300"
-                >
-                  ventas@masydase.com
-                </a>
-                <a
-                  href="mailto:soporte@masydase.com"
-                  className="  text-paragraph hover:text-masyp hover:underline transition-all duration-300"
-                >
-                  soporte@masydase.com
-                </a>
-                <a
-                  href="mailto:info@masydase.com"
-                  className="  text-paragraph hover:text-masyp hover:underline transition-all duration-300"
-                >
-                  info@masydase.com
-                </a>
-                <a
                   href="tel:987351513"
                   className=" text-paragraph hover:text-masyp hover:underline transition-all duration-300"
                 >
-                  987351513
+                  (+51) 987351513
                 </a>
                 <a
                   href="tel:984799203"
                   className="  text-paragraph hover:text-masyp hover:underline transition-all duration-300"
                 >
-                  984799203
+                  (+51) 984799203
                 </a>
                 <a
                   href="tel:936072443"
                   className="  text-paragraph hover:text-masyp hover:underline transition-all duration-300"
                 >
-                  936072443
+                  (+51) 936072443
                 </a>
               </div>
             </div>
@@ -170,7 +155,7 @@ const Contacto = () => {
               Enviar Mensaje
             </h1>
             <p className="text-paragraph mb-[30px]">
-              Hay campos que son obligarios *
+              Hay campos que son obligatorios *
             </p>
             <form
               onSubmit={handleSubmit(onSubmit)}
