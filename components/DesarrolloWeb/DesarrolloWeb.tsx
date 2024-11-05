@@ -26,12 +26,12 @@ export const products = [
     thumbnail: "/assets/images/desarrolloWeb/qtr01.png",
   },
   {
-    title: "CaseCobra",
+    title: "CaseCobraDev",
     link: "#",
     thumbnail: "/assets/images/desarrolloWeb/case.png",
   },
   {
-    title: "Inner",
+    title: "InnerDev",
     link: "#",
     thumbnail: "/assets/images/desarrolloWeb/inner.png",
   },
@@ -48,47 +48,14 @@ export const products = [
       "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
   },
   {
-    title: "Tailwind Master Kit",
+    title: "CaseCobra",
     link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
+    thumbnail: "/assets/images/desarrolloWeb/case.png",
   },
   {
-    title: "SmartBridge",
+    title: "Inner",
     link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
-  },
-  {
-    title: "Renderwork Studio",
-    link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
-  },
-
-  {
-    title: "Creme Digital",
-    link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
-  },
-  {
-    title: "Golden Bells Academy",
-    link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
-  },
-  {
-    title: "Invoker Labs",
-    link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/invoker.png",
-  },
-  {
-    title: "E Free Invoice",
-    link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+    thumbnail: "/assets/images/desarrolloWeb/inner.png",
   },
 ];
 
