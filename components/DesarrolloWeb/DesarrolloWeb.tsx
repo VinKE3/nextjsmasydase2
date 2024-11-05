@@ -4,10 +4,9 @@ import ServicesDesarrolloWeb from "./components/ServicesDesarrolloWeb";
 
 export const products = [
   {
-    title: "Moonbeam",
+    title: "PersonalizaloLima",
     link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+    thumbnail: "/assets/images/desarrolloWeb/qtr01.png",
   },
   {
     title: "QueTalRegalo",
@@ -21,9 +20,9 @@ export const products = [
   },
 
   {
-    title: "PersonalizaloLima",
+    title: "InnerDev",
     link: "#",
-    thumbnail: "/assets/images/desarrolloWeb/qtr01.png",
+    thumbnail: "/assets/images/desarrolloWeb/inner.png",
   },
   {
     title: "CaseCobraDev",

@@ -7,6 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { userSchema } from "@/validations/userSchema";
+import NeuButton from "../Buttons/NeuButton";
 
 type inputs = {
   name: "";
@@ -72,6 +73,10 @@ const Contacto = () => {
               <p className="max-w-[209px] text-paragraph mt-5">
                 Villa el Salvador, Sec. 3 Grupo 13 Mza. C Lote. 9
               </p>
+              <NeuButton
+                text="Ver en Maps"
+                href="https://maps.app.goo.gl/cPAfPhYRKznGPusJ9"
+              />
             </div>
             <div className="col-span-1">
               <h1 className="flex gap-2.5">
