@@ -531,7 +531,7 @@ const Utilcon = () => {
                   </h1>
 
                   <img
-                    src="/assets/images/utilcon/tipodecambio.png"
+                    src="/assets/images/Utilcon/tipodecambio.png"
                     alt=""
                     className="object-cover  rounded-2xl"
                     height={400}
@@ -580,7 +580,7 @@ const Utilcon = () => {
                   </h1>
 
                   <img
-                    src="/assets/images/utilcon/validar.png"
+                    src="/assets/images/Utilcon/validar.png"
                     alt=""
                     className="object-cover  rounded-2xl"
                     height={400}
@@ -629,7 +629,7 @@ const Utilcon = () => {
                   </h1>
 
                   <img
-                    src="/assets/images/utilcon/eliminarempresa.png"
+                    src="/assets/images/Utilcon/eliminarempresa.png"
                     alt=""
                     className="object-cover  rounded-2xl"
                     height={400}
