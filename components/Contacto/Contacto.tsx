@@ -1,12 +1,5 @@
 "use client";
-import {
-  Facebook,
-  Globe,
-  Instagram,
-  MailCheck,
-  PhoneCall,
-  Youtube,
-} from "lucide-react";
+import { Facebook, Globe, Instagram, PhoneCall, Youtube } from "lucide-react";
 import React, { useEffect } from "react";
 import { sendEmail } from "@/actions/sendEmail";
 import { toast, ToastContainer } from "react-toastify";
@@ -14,7 +7,6 @@ import "react-toastify/dist/ReactToastify.css";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { userSchema } from "@/validations/userSchema";
-import NeuButton from "../Buttons/NeuButton";
 
 type inputs = {
   name: "";
