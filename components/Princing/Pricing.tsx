@@ -29,7 +29,7 @@ const Pricing = () => {
           <h1 className="px-5 bg-masyp/10 border border-masyp/20 text-masyp font-medium rounded-[30px] w-fit mx-auto">
             Tabla Compartiva
           </h1>
-          <h2 className="text-paragraph font-semibold text-24 sm:text-48 pt-5 max-w-[819px] text-center">
+          <h2 className="text-main-black font-semibold text-24 sm:text-48 pt-5 max-w-[819px] text-center">
             Sistemas de facturación web electrónica
           </h2>
           <p className="text-paragraph text-18 sm:text-18 pt-5 max-w-[819px] text-center">

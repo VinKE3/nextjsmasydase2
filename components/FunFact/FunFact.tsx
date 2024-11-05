@@ -5,8 +5,8 @@ import { useInView } from "react-intersection-observer";
 const FunFactOne: React.FC = () => {
   const [startCount, setStartCount] = useState(false);
   const { ref } = useInView({
-    triggerOnce: true, // Solo disparar la animación una vez
-    threshold: 0.3, // Se activa cuando el 30% de la sección es visible
+    triggerOnce: true,
+    threshold: 0.3,
     onChange: (inView) => {
       if (inView) {
         setStartCount(true);
@@ -27,7 +27,9 @@ const FunFactOne: React.FC = () => {
               </h2>
               <p className="text-paragraph mb-[40px] pl-5 border-l-[3px] border-masyp">
                 Nuestra empresa esta definida por el dinamismo digital y la
-                innovación tecnológica.
+                innovación tecnológica, brindando soluciones innovadoras y de
+                vanguardia a nuestros clientes, permitiéndoles optimizar sus
+                procesos y alcanzar sus objetivos de negocio.
               </p>
               <a href="#servicios">
                 <div className="w-[182px] h-[56px] rounded-full border border-[#e7e3fa] flex justify-center items-center">
@@ -76,8 +78,7 @@ const FunFactOne: React.FC = () => {
                 <div className="relative flex items-center justify-center p-8">
                   <div className="relative z-10 flex flex-col items-center justify-between space-y-5">
                     <p className="font-semibold text-center md:text-48 text-34 text-main-black">
-                      {startCount && <CountUp start={0} end={15} />}
-                      K+
+                      {startCount && <CountUp start={0} end={300} />}+
                     </p>
                     <hr className="border-[3px] border-masyp w-[80px]" />
                     <p className="font-semibold text-center text-paragraph text-18">

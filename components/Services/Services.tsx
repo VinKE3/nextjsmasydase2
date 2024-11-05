@@ -9,7 +9,7 @@ const Services = () => {
         <h1 className="px-5 bg-masyp/10 border border-masyp/20 text-masyp font-medium rounded-[30px] w-fit mx-auto">
           Nuestros Servicios
         </h1>
-        <h2 className="sm:text-48 text-24 font-semibold text-gray-500 mb-[32px] mt-[18px] w-full max-w-[795px] text-center mx-auto">
+        <h2 className="sm:text-48 text-24 font-semibold text-main-black mb-[32px] mt-[18px] w-full max-w-[795px] text-center mx-auto">
           Ofrecemos distintos servicios que te ayudaran a potenciar tu negocio
         </h2>
         <div

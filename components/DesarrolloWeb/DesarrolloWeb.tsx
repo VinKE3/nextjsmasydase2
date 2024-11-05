@@ -5,28 +5,25 @@ import ServicesDesarrolloWeb from "./components/ServicesDesarrolloWeb";
 export const products = [
   {
     title: "Moonbeam",
-    link: "https://gomoonbeam.com",
+    link: "#",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
   },
   {
-    title: "Cursor",
-    link: "https://cursor.so",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+    title: "QueTalRegalo",
+    link: "#",
+    thumbnail: "/assets/images/desarrolloWeb/qtr02.png",
   },
   {
-    title: "Rogue",
+    title: "IzaMotors",
     link: "https://userogue.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/rogue.png",
+    thumbnail: "/assets/images/desarrolloWeb/IZA.png",
   },
 
   {
-    title: "Editorially",
-    link: "https://editorially.org",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+    title: "PersonalizaloLima",
+    link: "#",
+    thumbnail: "/assets/images/desarrolloWeb/qtr01.png",
   },
   {
     title: "Editrix AI",

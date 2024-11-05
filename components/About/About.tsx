@@ -112,19 +112,19 @@ const AboutOne: React.FC = () => {
               <ul className="flex flex-wrap md:gap-[30px] gap-5 mb-[50px]">
                 <li className="flex space-x-2.5 items-center text-masyp font-medium px-5 py-3 bg-main-gray border border-[#e7e3fa] leading-none rounded-full">
                   <Check />
-                  <span>Desarrollo de aplicaciones</span>
+                  <span>Facturación Electrónica</span>
                 </li>
                 <li className="flex space-x-2.5 items-center text-masyp font-medium px-5 py-3 bg-main-gray border border-[#e7e3fa] leading-none rounded-full">
                   <Check />
-                  <span>Soporte Técnico</span>
+                  <span>Sistemas a medida</span>
                 </li>
                 <li className="flex space-x-2.5 items-center text-masyp font-medium px-5 py-3 bg-main-gray border border-[#e7e3fa] leading-none rounded-full">
                   <Check />
-                  <span>Calidad y Servicio</span>
+                  <span>Outsourcing Contable</span>
                 </li>
                 <li className="flex space-x-2.5 items-center text-masyp font-medium px-5 py-3 bg-main-gray border border-[#e7e3fa] leading-none rounded-full">
                   <Check />
-                  <span>Seg</span>
+                  <span>Desarrollo Web</span>
                 </li>
               </ul>
               <div className="flex justify-start items-center">
