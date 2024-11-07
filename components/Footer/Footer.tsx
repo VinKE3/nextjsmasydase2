@@ -292,7 +292,7 @@ const Footer = () => {
               2024 © Todos los derechos reservados
               <b className="text-white px-2">MasyDase</b>
             </span>
-            <div className="relative">
+            <div className="relative flex justify-center mb-16 md:mb-0">
               <a
                 href="#"
                 aria-label="go top"

@@ -11,17 +11,15 @@ const AboutOne: React.FC = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Ajusta la duración según tu preferencia
-      once: true, // La animación solo se ejecutará una vez al hacer scroll
+      duration: 1000,
+      once: true,
     });
-    AOS.refresh(); // Refresca AOS en caso de que el contenido cambie
+    AOS.refresh();
   }, []);
 
   useEffect(() => {
     if (sceneRef.current) {
       const parallaxInstance = new Parallax(sceneRef.current);
-
-      // Cleanup the parallax instance on component unmount
       return () => {
         parallaxInstance.disable();
       };
@@ -78,7 +76,7 @@ const AboutOne: React.FC = () => {
                         data-aos-delay="100"
                         className="inline-block h-fit px-[30px] py-2.5 bg-masyp text-pone shadow-small shadow-masyp text-white rounded-full rounded-bl-none"
                       >
-                        Soluciones Ágiles
+                        Transformamos ideas
                       </div>
                     </div>
                     <div
@@ -91,7 +89,7 @@ const AboutOne: React.FC = () => {
                         className="w-[296px] h-fit text-center p-[3px] pl-5 bg-white shadow-style-one rounded-full items-center"
                       >
                         <span className="text-sm font-semibold text-main-black text-nowrap">
-                          Soluciones Ágiles
+                          en Soluciones Ágiles
                         </span>
                       </div>
                     </div>

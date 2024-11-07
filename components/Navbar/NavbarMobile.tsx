@@ -67,7 +67,7 @@ export default function NavbarMobile() {
   };
 
   return (
-    <nav className="bg-white shadow-md lg:hidden">
+    <nav className="bg-white shadow-md xl:hidden">
       <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
         {navItems.map((item) => (
           <NavItem key={item.name} item={item} />
