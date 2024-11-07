@@ -133,7 +133,7 @@ const GuiasRemision = () => {
                 </div>
                 <img
                   src="./assets/images/guias/grRemitente.png"
-                  alt=""
+                  alt="guiaRemitente"
                   className="max-w-full w-full rounded-2xl mt-10 relative z-10 p-2"
                 />
                 <div className="relative z-10 flex justify-between px-10 mt-4">

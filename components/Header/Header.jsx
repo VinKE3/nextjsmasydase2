@@ -113,7 +113,7 @@ export default function DemoHeaderOne() {
                       src="/assets/images/logo/logo2.png"
                       width={170}
                       height={100}
-                      alt=""
+                      alt="logoMasyDase"
                     />
                   </Link>
                 </div>
