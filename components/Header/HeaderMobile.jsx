@@ -102,19 +102,19 @@ const MobileHeader = () => {
             <a href="tel:987351513" className="flex gap-2.5 group">
               <PhoneCall className="text-masyp" />
               <span className="text-base font-bold leading-5 tracking-tight text-paragraph hover:text-masyp">
-                Cel : 987351513
+                Cel : (+51)987351513
               </span>
             </a>
             <a href="tel:984799203" className="flex gap-2.5 group">
               <PhoneCall className="text-masyp" />
               <span className="text-base font-bold leading-5 tracking-tight text-paragraph hover:text-masyp">
-                Cel : 984799203
+                Cel : (+51)984799203
               </span>
             </a>
             <a href="tel:936072443" className="flex gap-2.5 group">
               <PhoneCall className="text-masyp" />
               <span className="text-base font-bold leading-5 tracking-tight text-paragraph hover:text-masyp">
-                Cel : 0936072443
+                Cel : (+51)936072443
               </span>
             </a>
             <a href="mailto:ventas@masydase.com" className="flex gap-2.5 group">
