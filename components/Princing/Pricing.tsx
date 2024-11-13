@@ -1,6 +1,7 @@
 import { Check, Video, X } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from "react";
+import { TypewriterEffectSmooth } from "../ui/typewriter-effect";
 
 const Pricing = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,6 +20,22 @@ const Pricing = () => {
   const handleCloseModal2 = () => {
     setIsOpen2(false);
   };
+  const words = [
+    {
+      text: "Sistema",
+    },
+    {
+      text: "Estándar",
+    },
+  ];
+  const words2 = [
+    {
+      text: "Sistema a",
+    },
+    {
+      text: "Medida",
+    },
+  ];
   return (
     <section
       id="facturacion-electronica"
@@ -43,46 +60,41 @@ const Pricing = () => {
             data-aos="fade-up"
             className="col-span-6 p-5 sm:p-10 lg:p-12 bg-white border border-transparent hover:border-white/20 rounded-[40px] transition-all duration-200 text-white h-fit"
           >
-            <img
-              src="/assets/images/factura/standar.jpg"
-              alt="Pricing Title"
-              width={300}
-              height={100}
-            />
+            <TypewriterEffectSmooth words={words} />
             <p className="pt-5  text-gray-500">No aplica a modificaciones</p>
 
             <ul className="flex flex-col gap-5 pt-5">
               <li className="flex items-center gap-3 font-medium text-18">
-                <Check className="text-masyp" />
+                <Check className="text-masyp flex-shrink-0" />
                 <span className="text-paragraph">
                   Funciones predeterminadas.
                 </span>
               </li>
 
               <li className="flex items-center gap-3 font-medium text-18">
-                <Check className="text-masyp" />
+                <Check className="text-masyp flex-shrink-0" />
                 <span className="text-paragraph">Bajo costo</span>
               </li>
 
               <li className="flex items-center gap-3 font-medium text-18">
-                <Check className="text-masyp" />
+                <Check className="text-masyp flex-shrink-0" />
                 <span className="text-paragraph">
                   Incluye Soporte estandarizado
                 </span>
               </li>
 
               <li className="flex items-center gap-3 font-medium text-18">
-                <Check className="text-masyp" />
+                <Check className="text-masyp flex-shrink-0" />
                 <span className="text-paragraph">
                   Implementación inmediata.
                 </span>
               </li>
               <li className="flex items-center gap-3 font-medium text-18">
-                <Check className="text-masyp" />
+                <Check className="text-masyp flex-shrink-0" />
                 <span className="text-paragraph">Escalabilidad limitada</span>
               </li>
               <li className="flex items-center gap-3 font-medium text-18">
-                <Check className="text-masyp" />
+                <Check className="text-masyp flex-shrink-0" />
                 <span className="text-paragraph">
                   Diseño y compatibilidad con cualquier rubro
                 </span>
@@ -129,52 +141,47 @@ const Pricing = () => {
             data-aos="fade-down"
             className="col-span-6 p-5 sm:p-10 lg:p-12 bg-white border border-transparent hover:border-white/20 rounded-[40px] transition-all duration-200 text-white h-fit"
           >
-            <img
-              src="/assets/images/factura/medida.jpg"
-              alt="Pricing Title"
-              width={300}
-              height={100}
-            />
+            <TypewriterEffectSmooth words={words2} />
             <p className="pt-5 text-paragraph">
               Si Aplica a modificaciones bajo los requerimientos del cliente
             </p>
 
             <ul className="flex flex-col gap-5 pt-5">
               <li className="flex items-center gap-3 font-medium text-18">
-                <Check className="text-masyp" />
+                <Check className="text-masyp flex-shrink-0" />
                 <span className="text-paragraph">
                   Personalización según necesidades de la empresa.
                 </span>
               </li>
 
               <li className="flex items-center gap-3 font-medium text-18">
-                <Check className="text-masyp" />
+                <Check className="text-masyp flex-shrink-0" />
                 <span className="text-paragraph">
                   Mayor inversión con enfoque único.
                 </span>
               </li>
 
               <li className="flex items-center gap-3 font-medium text-18">
-                <Check className="text-masyp" />
+                <Check className="text-masyp flex-shrink-0" />
                 <span className="text-paragraph">
                   Incluye Soporte especializado
                 </span>
               </li>
 
               <li className="flex items-center gap-3 font-medium text-18">
-                <Check className="text-masyp" />
+                <Check className="text-masyp flex-shrink-0" />
                 <span className="text-paragraph">
                   Requiere tiempo de desarrollo e implementación.
                 </span>
               </li>
               <li className="flex items-center gap-3 font-medium text-18">
-                <Check className="text-masyp" />
+                <Check className="text-masyp flex-shrink-0" />
                 <span className="text-paragraph">
                   Apto para modificaciones según cambios de la empresa.
                 </span>
               </li>
               <li className="flex items-center gap-3 font-medium text-18">
-                <Check className="text-masyp" />
+                <Check className="text-masyp flex-shrink-0" />
                 <span className="text-paragraph">Exclusividad de uso.</span>
               </li>
             </ul>
