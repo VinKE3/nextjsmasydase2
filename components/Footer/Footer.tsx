@@ -8,12 +8,7 @@ const Footer = () => {
     <footer className="relative pt-20 overflow-hidden bg-black-seo">
       <div className="grid grid-cols-4 gap-4 mx-auto mb-20 theme-container md:grid-cols-8 xl:grid-cols-12">
         <div className="col-span-4">
-          <img
-            src="/assets/images/logo/MS.2.png"
-            alt="logo"
-            width={150}
-            height={100}
-          />
+          <img src="/assets/images/logo/logo4.png" alt="logo" />
           <p className="max-w-[300px] text-white/50 mt-[30px] mb-6">
             Transformamos ideas en soluciones ágiles de confianza garantizando
             la satisfacción de nuestros clientes.
